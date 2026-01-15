@@ -86,14 +86,15 @@ const menuSlider = new Swiper('.menu-swiper', {
 // Branches Logic
 const pins = document.querySelectorAll('.branches__pin, .map-pin');
 const popups = document.querySelectorAll('.branches__popup');
+const overlay = document.getElementById('popup-overlay') || document.querySelector('.popup-overlay');
 
 // FIX: Move popups to body to avoid stacking context issues (Safari z-index bug)
-// This ensures popups sit above the overlay (z-index 9998) which is also in body
+// We also move the overlay to ensure it is immediately before the popups in the DOM
+if (overlay) document.body.appendChild(overlay);
 popups.forEach(popup => document.body.appendChild(popup));
 
 const closeButtons = document.querySelectorAll('.branches__close, .close-popup');
 const mapContainer = document.querySelector('.branches__wrapper');
-const overlay = document.getElementById('popup-overlay') || document.querySelector('.popup-overlay');
 
 // Helper: Close All
 const closeAllPopups = () => {
