@@ -64,7 +64,6 @@
     <!-- Libraries CSS -->
     <!-- Libraries CSS (Deferred) -->
     <link rel="stylesheet" href="assets/libs/swiper/swiper-bundle.min.css" media="print" onload="this.media='all'"/>
-    <link rel="stylesheet" href="assets/libs/fancybox/fancybox.css" media="print" onload="this.media='all'"/>
     <link rel="stylesheet" href="assets/libs/aos/aos.css" media="print" onload="this.media='all'"/>
     <link rel="stylesheet" href="assets/libs/lenis/lenis.css" media="print" onload="this.media='all'"/>
 
@@ -75,11 +74,16 @@
     <!-- NoScript Fallback -->
     <noscript>
         <link rel="stylesheet" href="assets/libs/swiper/swiper-bundle.min.css"/>
-        <link rel="stylesheet" href="assets/libs/fancybox/fancybox.css"/>
         <link rel="stylesheet" href="assets/libs/aos/aos.css"/>
         <link rel="stylesheet" href="assets/libs/lenis/lenis.css"/>
         <link rel="stylesheet" href="assets/css/branches.css">
     </noscript>
+
+    <!-- Scripts (Deferred) -->
+    <script src="assets/libs/swiper/swiper-bundle.min.js" defer></script>
+    <script src="assets/libs/aos/aos.js" defer></script>
+    <script src="assets/libs/lenis/lenis.min.js" defer></script>
+    <script src="assets/js/script.js" defer></script>
 </head>
 
 <body>
@@ -1702,15 +1706,12 @@
         </div>
     </footer>
 
-    <!-- Libraries JS -->
-    <script src="assets/libs/swiper/swiper-bundle.min.js"></script>
-    <script src="assets/libs/fancybox/fancybox.umd.js"></script>
-    <script src="assets/libs/parallax/parallax.min.js"></script>
-    <script src="assets/libs/aos/aos.js"></script>
-    <script src="assets/libs/lenis/lenis.min.js"></script>
-
-    <!-- Main Script -->
-    <script src="assets/js/script.js"></script>
+    <script>
+        // AOS Init fallback if JS deferred
+        // window.onload = function() {
+        //   AOS.init();
+        // };
+    </script>
 </body>
 
 </html>
