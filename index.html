@@ -14,6 +14,8 @@
     <!-- Libraries CSS -->
     <link rel="stylesheet" href="assets/libs/swiper/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="assets/libs/fancybox/fancybox.css"/>
+    <link rel="stylesheet" href="assets/libs/aos/aos.css"/>
+    <link rel="stylesheet" href="assets/libs/lenis/lenis.css"/>
     
     <!-- Main CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
@@ -30,14 +32,14 @@
                 </a>
                 <nav class="header__nav">
                     <ul class="header__menu">
-                        <li><a href="/">Main</a></li>
-                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#hero">Main</a></li>
+                        <li><a href="#about-scene">About Us</a></li>
                         <li><a href="#branches">Branches</a></li>
-                        <li><a href="/">Franchise</a></li>
-                        <li><a href="#about">Contacts</a></li>
-                        <li><a href="#branches">Menu</a></li>
-                        <li><a href="#branches">Retail Beans</a></li>
-                        <li><a href="#branches">Sustainability</a></li>
+                        <li><a href="#franchise">Franchise</a></li>
+                        <li><a href="#contact">Contacts</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#retail">Retail Beans</a></li>
+                        <li><a href="#sustainability">Sustainability</a></li>
                     </ul>   
                 </nav>
                 <div class="header__content-contact">
@@ -59,12 +61,12 @@
     <main>
         
         <!-- Hero Section -->
-        <section class="hero">
+        <section class="hero" id="hero">
             <div class="container">
-                <div class="hero__content">
+                <div class="hero__content" data-aos="fade-up">
                     <h1>Where coffee is more <br> than a drink <mark>It’s an experience.</mark></h1>
                 </div>
-                <div class="hero__list">
+                <div class="hero__list" data-aos="fade-up" data-aos-delay="200">
                     <p>Choose Your Location</p>
                     <ul class="hero__list-ul">
                         <li class="hero__list-item"><a href="/" class="hero__list-link hero__list--link--active">UAE</a></li>
@@ -74,18 +76,18 @@
                 </div>
             </div>
             <div class="hero__bg--image">
-                <img src="assets/images/hero-bg.png" width="1920" height="1080" loading="lazy" alt="images of coffee cup">
+                <picture><source srcset="assets/images/hero-bg.webp" type="image/webp"><img src="assets/images/hero-bg.png" width="1920" height="1080" loading="lazy" alt="images of coffee cup"></picture>
             </div>
         </section>
 
         <!-- About Section -->
         <section class="about" id="about-scene">
             <div class="about-bg">
-                <img src="assets/images/about-parallax-bg.jpg" class="about__parallax-bg" data-depth="0.2" width="1920" height="1500" loading="lazy" alt="About us background image">
+                <picture><source srcset="assets/images/about-parallax-bg.webp" type="image/webp"><img src="assets/images/about-parallax-bg.jpg" class="about__parallax-bg" data-depth="0.2" width="1920" height="1500" loading="lazy" alt="About us background image"></picture>
             </div>
             
             <div class="container">
-                <div class="container__wrapper">
+                <div class="container__wrapper" data-aos="fade-right">
                     <h2>About Us</h2>
                     <div class="about__description">
                         <p>Founded in 2021 in Dubai, Roasters Specialty Coffee House was born from a deep passion for exceptional coffee and a vision to bring the world’s finest brews to the heart of the UAE.</p>
@@ -103,16 +105,16 @@
         <!-- Our Mission Section -->
         <section class="mission">
             <div class="container">
-                <div class="mission__content">
+                <div class="mission__content" data-aos="fade-right">
                     <h2>Our Mission</h2>
                     <p>Our mission is simple: to deliver the best coffee and uphold the highest standards in everything we do. From bean to cup, every detail matters. We strive for excellence not only in taste, but in service, design, and experience — creating moments our guests remember and return for.</p>
                 </div>
-                <div class="mission__image">
-                    <img src="assets/images/mission-image.jpg" width="2114" height="1089" loading="lazy" alt="image Our Mission">
+                <div class="mission__image" data-aos="fade-left">
+                    <picture><source srcset="assets/images/mission-image.webp" type="image/webp"><img src="assets/images/mission-image.jpg" width="2114" height="1089" loading="lazy" alt="image Our Mission"></picture>
                 </div>
             </div>
             <div class="mission-bg">
-                <img src="assets/images/mission-bg.png" width="1920" height="1080" loading="lazy" alt="image mission">
+                <picture><source srcset="assets/images/mission-bg.webp" type="image/webp"><img src="assets/images/mission-bg.png" width="1920" height="1080" loading="lazy" alt="image mission"></picture>
             </div>
         </section>
 
@@ -120,22 +122,22 @@
         <section class="proud">
             <div class="container">
                 <div class="proud-wrapper">
-                    <div class="proud-slider swiper">
+                    <div class="proud-slider swiper" data-aos="fade-left">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <img src="assets/images/swiper-slide1.jpg" width="1111" height="563" loading="lazy" alt="slider image 1">
+                                <picture><source srcset="assets/images/swiper-slide1.webp" type="image/webp"><img src="assets/images/swiper-slide1.jpg" width="1111" height="563" loading="lazy" alt="slider image 1"></picture>
                             </div>
                             <div class="swiper-slide">
-                                <img src="assets/images/swiper-slide1.jpg" width="1111" height="563" loading="lazy" alt="slider image 1">
+                                <picture><source srcset="assets/images/swiper-slide1.webp" type="image/webp"><img src="assets/images/swiper-slide1.jpg" width="1111" height="563" loading="lazy" alt="slider image 1"></picture>
                             </div>
                             <div class="swiper-slide">
-                                <img src="assets/images/swiper-slide1.jpg" width="1111" height="563" loading="lazy" alt="slider image 1">
+                                <picture><source srcset="assets/images/swiper-slide1.webp" type="image/webp"><img src="assets/images/swiper-slide1.jpg" width="1111" height="563" loading="lazy" alt="slider image 1"></picture>
                             </div>
                             <div class="swiper-slide">
-                                <img src="assets/images/swiper-slide1.jpg" width="1111" height="563" loading="lazy" alt="slider image 1">
+                                <picture><source srcset="assets/images/swiper-slide1.webp" type="image/webp"><img src="assets/images/swiper-slide1.jpg" width="1111" height="563" loading="lazy" alt="slider image 1"></picture>
                             </div>
                             <div class="swiper-slide">
-                                <img src="assets/images/swiper-slide1.jpg" width="1111" height="563" loading="lazy" alt="slider image 1">
+                                <picture><source srcset="assets/images/swiper-slide1.webp" type="image/webp"><img src="assets/images/swiper-slide1.jpg" width="1111" height="563" loading="lazy" alt="slider image 1"></picture>
                             </div>
                         </div>
                         <!-- Navigation -->
@@ -148,7 +150,7 @@
                         <!-- Pagination -->
                         <div class="proud-slider-pagination swiper-pagination"></div>
                     </div>
-                    <div class="proud-content">
+                    <div class="proud-content" data-aos="fade-right">
                         <h2>Proud <br> of quality</h2>
                         <div class="proud-content-description">
                             <p>At Roasters, quality begins at the source. We partner with dedicated farmers and trusted producers who share our commitment to excellence, sustainability, and ethical practices. Every bean we select is carefully chosen from renowned farms around the world, based on its origin, harvest conditions, and unique flavor profile.</p>
@@ -158,40 +160,40 @@
                 </div>
             </div>
             <div class="proud-bg">
-                <img src="assets/images/proud-bg.png" width="1920" height="1080" loading="lazy" alt="image">
+                <picture><source srcset="assets/images/proud-bg.webp" type="image/webp"><img src="assets/images/proud-bg.png" width="1920" height="1080" loading="lazy" alt="image"></picture>
             </div>
         </section>
 
         <!-- Menu Section -->
-        <section class="menu">
+        <section class="menu" id="menu">
             <div class="container-wrapper">
                 <div class="container">
-                   <div class="menu-content">
+                   <div class="menu-content" data-aos="fade-up">
                         <h2>Menu</h2>
                         <p>A dynamic mix of classic favorites and trend-driven innovations inspired by global specialty coffee culture.</p>
                         <a href="/" class="menu-content-link">Show Me</a>
                    </div>
                 </div>
-                <div class="menu-swiper swiper">
+                <div class="menu-swiper swiper" data-aos="fade-up" data-aos-delay="200">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="menu-content-image">
-                                <img src="assets/images/menu-content-image.jpg" width="1920" height="540" loading="lazy" alt="Menu Image">
+                                <picture><source srcset="assets/images/menu-content-image.webp" type="image/webp"><img src="assets/images/menu-content-image.jpg" width="1920" height="540" loading="lazy" alt="Menu Image"></picture>
                             </div>      
                         </div>
                          <div class="swiper-slide">
                             <div class="menu-content-image">
-                                <img src="assets/images/menu-content-image.jpg" width="1920" height="540" loading="lazy" alt="Menu Image">
+                                <picture><source srcset="assets/images/menu-content-image.webp" type="image/webp"><img src="assets/images/menu-content-image.jpg" width="1920" height="540" loading="lazy" alt="Menu Image"></picture>
                             </div>      
                         </div>
                          <div class="swiper-slide">
                             <div class="menu-content-image">
-                                <img src="assets/images/menu-content-image.jpg" width="1920" height="540" loading="lazy" alt="Menu Image">
+                                <picture><source srcset="assets/images/menu-content-image.webp" type="image/webp"><img src="assets/images/menu-content-image.jpg" width="1920" height="540" loading="lazy" alt="Menu Image"></picture>
                             </div>      
                         </div>
                          <div class="swiper-slide">
                             <div class="menu-content-image">
-                                <img src="assets/images/menu-content-image.jpg" width="1920" height="540" loading="lazy" alt="Menu Image">
+                                <picture><source srcset="assets/images/menu-content-image.webp" type="image/webp"><img src="assets/images/menu-content-image.jpg" width="1920" height="540" loading="lazy" alt="Menu Image"></picture>
                             </div>      
                         </div>
                     </div>
@@ -207,7 +209,7 @@
                 </div>
             </div>
             <div class="menu-bg">
-                <img src="assets/images/menu-bg.png" width="1920" height="1080" loading="lazy" alt="image">
+                <picture><source srcset="assets/images/menu-bg.webp" type="image/webp"><img src="assets/images/menu-bg.png" width="1920" height="1080" loading="lazy" alt="image"></picture>
             </div>
         </section>
 
@@ -218,9 +220,9 @@
                 <h2>Branches</h2>
                 
                 <div class="branches__wrapper">
-                    <div class="branches__map">
+                    <div class="branches__map" data-aos="zoom-in" data-aos-duration="1500">
                         <!-- Use the world map we downloaded earlier or placeholder -->
-                        <img src="assets/images/maps.png" alt="World Map" width="1920" height="1080" loading="lazy" class="branches__map-img">
+                        <picture><source srcset="assets/images/maps.webp" type="image/webp"><img src="assets/images/maps.png" alt="World Map" width="1920" height="1080" loading="lazy" class="branches__map-img"></picture>
                         
                         <!-- 7 Pins - User to position via style="top:%; left:%" -->
 
@@ -251,11 +253,11 @@
                     <div class="branches__popup" id="branch-popup-1">
                         <div class="swiper branch-swiper">
                             <div class="swiper-wrapper">
-                                <div class="swiper-slide"><img src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy" alt="Interior"></div>
-                                <div class="swiper-slide"><img src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy" alt="Coffee"></div>
-                                <div class="swiper-slide"><img src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy" alt="Interior"></div>
-                                <div class="swiper-slide"><img src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy" alt="Coffee"></div>
-                                <div class="swiper-slide"><img src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy" alt="Interior"></div>
+                                <div class="swiper-slide"><picture><source srcset="assets/images/slider-item1.webp" type="image/webp"><img src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy" alt="Interior"></picture></div>
+                                <div class="swiper-slide"><picture><source srcset="assets/images/slider-item1.webp" type="image/webp"><img src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy" alt="Coffee"></picture></div>
+                                <div class="swiper-slide"><picture><source srcset="assets/images/slider-item1.webp" type="image/webp"><img src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy" alt="Interior"></picture></div>
+                                <div class="swiper-slide"><picture><source srcset="assets/images/slider-item1.webp" type="image/webp"><img src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy" alt="Coffee"></picture></div>
+                                <div class="swiper-slide"><picture><source srcset="assets/images/slider-item1.webp" type="image/webp"><img src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy" alt="Interior"></picture></div>
                             </div>
                             <div class="swiper-pagination"></div>
                         </div>
@@ -289,11 +291,11 @@
                     <div class="branches__popup" id="branch-popup-2">
                         <div class="swiper branch-swiper">
                             <div class="swiper-wrapper">
-                                <div class="swiper-slide"><img src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy" alt="Interior"></div>
-                                <div class="swiper-slide"><img src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy" alt="Coffee"></div>
-                                <div class="swiper-slide"><img src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy" alt="Interior"></div>
-                                <div class="swiper-slide"><img src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy" alt="Coffee"></div>
-                                <div class="swiper-slide"><img src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy" alt="Interior"></div>
+                                <div class="swiper-slide"><picture><source srcset="assets/images/slider-item1.webp" type="image/webp"><img src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy" alt="Interior"></picture></div>
+                                <div class="swiper-slide"><picture><source srcset="assets/images/slider-item1.webp" type="image/webp"><img src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy" alt="Coffee"></picture></div>
+                                <div class="swiper-slide"><picture><source srcset="assets/images/slider-item1.webp" type="image/webp"><img src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy" alt="Interior"></picture></div>
+                                <div class="swiper-slide"><picture><source srcset="assets/images/slider-item1.webp" type="image/webp"><img src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy" alt="Coffee"></picture></div>
+                                <div class="swiper-slide"><picture><source srcset="assets/images/slider-item1.webp" type="image/webp"><img src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy" alt="Interior"></picture></div>
                             </div>
                             <div class="swiper-pagination"></div>
                         </div>
@@ -327,11 +329,11 @@
                     <div class="branches__popup" id="branch-popup-3">
                         <div class="swiper branch-swiper">
                             <div class="swiper-wrapper">
-                                <div class="swiper-slide"><img src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy" alt="Interior"></div>
-                                <div class="swiper-slide"><img src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy" alt="Coffee"></div>
-                                <div class="swiper-slide"><img src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy" alt="Interior"></div>
-                                <div class="swiper-slide"><img src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy" alt="Coffee"></div>
-                                <div class="swiper-slide"><img src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy" alt="Interior"></div>
+                                <div class="swiper-slide"><picture><source srcset="assets/images/slider-item1.webp" type="image/webp"><img src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy" alt="Interior"></picture></div>
+                                <div class="swiper-slide"><picture><source srcset="assets/images/slider-item1.webp" type="image/webp"><img src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy" alt="Coffee"></picture></div>
+                                <div class="swiper-slide"><picture><source srcset="assets/images/slider-item1.webp" type="image/webp"><img src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy" alt="Interior"></picture></div>
+                                <div class="swiper-slide"><picture><source srcset="assets/images/slider-item1.webp" type="image/webp"><img src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy" alt="Coffee"></picture></div>
+                                <div class="swiper-slide"><picture><source srcset="assets/images/slider-item1.webp" type="image/webp"><img src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy" alt="Interior"></picture></div>
                             </div>
                             <div class="swiper-pagination"></div>
                         </div>
@@ -365,11 +367,11 @@
                     <div class="branches__popup" id="branch-popup-4">
                         <div class="swiper branch-swiper">
                             <div class="swiper-wrapper">
-                                <div class="swiper-slide"><img src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy" alt="Interior"></div>
-                                <div class="swiper-slide"><img src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy" alt="Coffee"></div>
-                                <div class="swiper-slide"><img src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy" alt="Interior"></div>
-                                <div class="swiper-slide"><img src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy" alt="Coffee"></div>
-                                <div class="swiper-slide"><img src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy" alt="Interior"></div>
+                                <div class="swiper-slide"><picture><source srcset="assets/images/slider-item1.webp" type="image/webp"><img src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy" alt="Interior"></picture></div>
+                                <div class="swiper-slide"><picture><source srcset="assets/images/slider-item1.webp" type="image/webp"><img src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy" alt="Coffee"></picture></div>
+                                <div class="swiper-slide"><picture><source srcset="assets/images/slider-item1.webp" type="image/webp"><img src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy" alt="Interior"></picture></div>
+                                <div class="swiper-slide"><picture><source srcset="assets/images/slider-item1.webp" type="image/webp"><img src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy" alt="Coffee"></picture></div>
+                                <div class="swiper-slide"><picture><source srcset="assets/images/slider-item1.webp" type="image/webp"><img src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy" alt="Interior"></picture></div>
                             </div>
                             <div class="swiper-pagination"></div>
                         </div>
@@ -403,11 +405,11 @@
                     <div class="branches__popup" id="branch-popup-5">
                       <div class="swiper branch-swiper">
                             <div class="swiper-wrapper">
-                                <div class="swiper-slide"><img src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy" alt="Interior"></div>
-                                <div class="swiper-slide"><img src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy" alt="Coffee"></div>
-                                <div class="swiper-slide"><img src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy" alt="Interior"></div>
-                                <div class="swiper-slide"><img src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy" alt="Coffee"></div>
-                                <div class="swiper-slide"><img src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy" alt="Interior"></div>
+                                <div class="swiper-slide"><picture><source srcset="assets/images/slider-item1.webp" type="image/webp"><img src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy" alt="Interior"></picture></div>
+                                <div class="swiper-slide"><picture><source srcset="assets/images/slider-item1.webp" type="image/webp"><img src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy" alt="Coffee"></picture></div>
+                                <div class="swiper-slide"><picture><source srcset="assets/images/slider-item1.webp" type="image/webp"><img src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy" alt="Interior"></picture></div>
+                                <div class="swiper-slide"><picture><source srcset="assets/images/slider-item1.webp" type="image/webp"><img src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy" alt="Coffee"></picture></div>
+                                <div class="swiper-slide"><picture><source srcset="assets/images/slider-item1.webp" type="image/webp"><img src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy" alt="Interior"></picture></div>
                             </div>
                             <div class="swiper-pagination"></div>
                         </div>
@@ -441,11 +443,11 @@
                     <div class="branches__popup" id="branch-popup-6">
                         <div class="swiper branch-swiper">
                             <div class="swiper-wrapper">
-                                <div class="swiper-slide"><img src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy" alt="Interior"></div>
-                                <div class="swiper-slide"><img src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy" alt="Coffee"></div>
-                                <div class="swiper-slide"><img src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy" alt="Interior"></div>
-                                <div class="swiper-slide"><img src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy" alt="Coffee"></div>
-                                <div class="swiper-slide"><img src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy" alt="Interior"></div>
+                                <div class="swiper-slide"><picture><source srcset="assets/images/slider-item1.webp" type="image/webp"><img src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy" alt="Interior"></picture></div>
+                                <div class="swiper-slide"><picture><source srcset="assets/images/slider-item1.webp" type="image/webp"><img src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy" alt="Coffee"></picture></div>
+                                <div class="swiper-slide"><picture><source srcset="assets/images/slider-item1.webp" type="image/webp"><img src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy" alt="Interior"></picture></div>
+                                <div class="swiper-slide"><picture><source srcset="assets/images/slider-item1.webp" type="image/webp"><img src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy" alt="Coffee"></picture></div>
+                                <div class="swiper-slide"><picture><source srcset="assets/images/slider-item1.webp" type="image/webp"><img src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy" alt="Interior"></picture></div>
                             </div>
                             <div class="swiper-pagination"></div>
                         </div>
@@ -479,11 +481,11 @@
                     <div class="branches__popup" id="branch-popup-7">
                        <div class="swiper branch-swiper">
                             <div class="swiper-wrapper">
-                                <div class="swiper-slide"><img src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy" alt="Interior"></div>
-                                <div class="swiper-slide"><img src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy" alt="Coffee"></div>
-                                <div class="swiper-slide"><img src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy" alt="Interior"></div>
-                                <div class="swiper-slide"><img src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy" alt="Coffee"></div>
-                                <div class="swiper-slide"><img src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy" alt="Interior"></div>
+                                <div class="swiper-slide"><picture><source srcset="assets/images/slider-item1.webp" type="image/webp"><img src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy" alt="Interior"></picture></div>
+                                <div class="swiper-slide"><picture><source srcset="assets/images/slider-item1.webp" type="image/webp"><img src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy" alt="Coffee"></picture></div>
+                                <div class="swiper-slide"><picture><source srcset="assets/images/slider-item1.webp" type="image/webp"><img src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy" alt="Interior"></picture></div>
+                                <div class="swiper-slide"><picture><source srcset="assets/images/slider-item1.webp" type="image/webp"><img src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy" alt="Coffee"></picture></div>
+                                <div class="swiper-slide"><picture><source srcset="assets/images/slider-item1.webp" type="image/webp"><img src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy" alt="Interior"></picture></div>
                             </div>
                             <div class="swiper-pagination"></div>
                         </div>
@@ -517,11 +519,11 @@
                     <div class="branches__popup" id="branch-popup-8">
                        <div class="swiper branch-swiper">
                             <div class="swiper-wrapper">
-                                <div class="swiper-slide"><img src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy" alt="Interior"></div>
-                                <div class="swiper-slide"><img src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy" alt="Coffee"></div>
-                                <div class="swiper-slide"><img src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy" alt="Interior"></div>
-                                <div class="swiper-slide"><img src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy" alt="Coffee"></div>
-                                <div class="swiper-slide"><img src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy" alt="Interior"></div>
+                                <div class="swiper-slide"><picture><source srcset="assets/images/slider-item1.webp" type="image/webp"><img src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy" alt="Interior"></picture></div>
+                                <div class="swiper-slide"><picture><source srcset="assets/images/slider-item1.webp" type="image/webp"><img src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy" alt="Coffee"></picture></div>
+                                <div class="swiper-slide"><picture><source srcset="assets/images/slider-item1.webp" type="image/webp"><img src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy" alt="Interior"></picture></div>
+                                <div class="swiper-slide"><picture><source srcset="assets/images/slider-item1.webp" type="image/webp"><img src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy" alt="Coffee"></picture></div>
+                                <div class="swiper-slide"><picture><source srcset="assets/images/slider-item1.webp" type="image/webp"><img src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy" alt="Interior"></picture></div>
                             </div>
                             <div class="swiper-pagination"></div>
                         </div>
@@ -557,11 +559,11 @@
                     <div class="branches__popup" id="branch-popup-9">
                        <div class="swiper branch-swiper">
                             <div class="swiper-wrapper">
-                                <div class="swiper-slide"><img src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy" alt="Interior"></div>
-                                <div class="swiper-slide"><img src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy" alt="Coffee"></div>
-                                <div class="swiper-slide"><img src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy" alt="Interior"></div>
-                                <div class="swiper-slide"><img src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy" alt="Coffee"></div>
-                                <div class="swiper-slide"><img src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy" alt="Interior"></div>
+                                <div class="swiper-slide"><picture><source srcset="assets/images/slider-item1.webp" type="image/webp"><img src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy" alt="Interior"></picture></div>
+                                <div class="swiper-slide"><picture><source srcset="assets/images/slider-item1.webp" type="image/webp"><img src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy" alt="Coffee"></picture></div>
+                                <div class="swiper-slide"><picture><source srcset="assets/images/slider-item1.webp" type="image/webp"><img src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy" alt="Interior"></picture></div>
+                                <div class="swiper-slide"><picture><source srcset="assets/images/slider-item1.webp" type="image/webp"><img src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy" alt="Coffee"></picture></div>
+                                <div class="swiper-slide"><picture><source srcset="assets/images/slider-item1.webp" type="image/webp"><img src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy" alt="Interior"></picture></div>
                             </div>
                             <div class="swiper-pagination"></div>
                         </div>
@@ -595,11 +597,11 @@
                     <div class="branches__popup" id="branch-popup-10">
                        <div class="swiper branch-swiper">
                             <div class="swiper-wrapper">
-                                <div class="swiper-slide"><img src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy" alt="Interior"></div>
-                                <div class="swiper-slide"><img src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy" alt="Coffee"></div>
-                                <div class="swiper-slide"><img src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy" alt="Interior"></div>
-                                <div class="swiper-slide"><img src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy" alt="Coffee"></div>
-                                <div class="swiper-slide"><img src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy" alt="Interior"></div>
+                                <div class="swiper-slide"><picture><source srcset="assets/images/slider-item1.webp" type="image/webp"><img src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy" alt="Interior"></picture></div>
+                                <div class="swiper-slide"><picture><source srcset="assets/images/slider-item1.webp" type="image/webp"><img src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy" alt="Coffee"></picture></div>
+                                <div class="swiper-slide"><picture><source srcset="assets/images/slider-item1.webp" type="image/webp"><img src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy" alt="Interior"></picture></div>
+                                <div class="swiper-slide"><picture><source srcset="assets/images/slider-item1.webp" type="image/webp"><img src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy" alt="Coffee"></picture></div>
+                                <div class="swiper-slide"><picture><source srcset="assets/images/slider-item1.webp" type="image/webp"><img src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy" alt="Interior"></picture></div>
                             </div>
                             <div class="swiper-pagination"></div>
                         </div>
@@ -633,11 +635,11 @@
                     <div class="branches__popup" id="branch-popup-11">
                        <div class="swiper branch-swiper">
                             <div class="swiper-wrapper">
-                                <div class="swiper-slide"><img src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy" alt="Interior"></div>
-                                <div class="swiper-slide"><img src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy" alt="Coffee"></div>
-                                <div class="swiper-slide"><img src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy" alt="Interior"></div>
-                                <div class="swiper-slide"><img src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy" alt="Coffee"></div>
-                                <div class="swiper-slide"><img src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy" alt="Interior"></div>
+                                <div class="swiper-slide"><picture><source srcset="assets/images/slider-item1.webp" type="image/webp"><img src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy" alt="Interior"></picture></div>
+                                <div class="swiper-slide"><picture><source srcset="assets/images/slider-item1.webp" type="image/webp"><img src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy" alt="Coffee"></picture></div>
+                                <div class="swiper-slide"><picture><source srcset="assets/images/slider-item1.webp" type="image/webp"><img src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy" alt="Interior"></picture></div>
+                                <div class="swiper-slide"><picture><source srcset="assets/images/slider-item1.webp" type="image/webp"><img src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy" alt="Coffee"></picture></div>
+                                <div class="swiper-slide"><picture><source srcset="assets/images/slider-item1.webp" type="image/webp"><img src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy" alt="Interior"></picture></div>
                             </div>
                             <div class="swiper-pagination"></div>
                         </div>
@@ -672,25 +674,25 @@
         </section>
 
         <!-- Sustainability Section -->
-        <section class="proud sustainability">
+        <section class="proud sustainability" id="sustainability">
             <div class="container">
                 <div class="proud-wrapper">
-                    <div class="proud-slider swiper">
+                    <div class="proud-slider swiper" data-aos="fade-left">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <img src="assets/images/swiper-slide2.jpg" width="1111" height="563" loading="lazy" alt="slider image 1">
+                                <picture><source srcset="assets/images/swiper-slide2.webp" type="image/webp"><img src="assets/images/swiper-slide2.jpg" width="1111" height="563" loading="lazy" alt="slider image 1"></picture>
                             </div>
                             <div class="swiper-slide">
-                                <img src="assets/images/swiper-slide2.jpg" width="1111" height="563" loading="lazy" alt="slider image 1">
+                                <picture><source srcset="assets/images/swiper-slide2.webp" type="image/webp"><img src="assets/images/swiper-slide2.jpg" width="1111" height="563" loading="lazy" alt="slider image 1"></picture>
                             </div>
                             <div class="swiper-slide">
-                                <img src="assets/images/swiper-slide2.jpg" width="1111" height="563" loading="lazy" alt="slider image 1">
+                                <picture><source srcset="assets/images/swiper-slide2.webp" type="image/webp"><img src="assets/images/swiper-slide2.jpg" width="1111" height="563" loading="lazy" alt="slider image 1"></picture>
                             </div>
                             <div class="swiper-slide">
-                                <img src="assets/images/swiper-slide2.jpg" width="1111" height="563" loading="lazy" alt="slider image 1">
+                                <picture><source srcset="assets/images/swiper-slide2.webp" type="image/webp"><img src="assets/images/swiper-slide2.jpg" width="1111" height="563" loading="lazy" alt="slider image 1"></picture>
                             </div>
                             <div class="swiper-slide">
-                                <img src="assets/images/swiper-slide2.jpg" width="1111" height="563" loading="lazy" alt="slider image 1">
+                                <picture><source srcset="assets/images/swiper-slide2.webp" type="image/webp"><img src="assets/images/swiper-slide2.jpg" width="1111" height="563" loading="lazy" alt="slider image 1"></picture>
                             </div>
                         </div>
                         <!-- Navigation -->
@@ -703,7 +705,7 @@
                         <!-- Pagination -->
                         <div class="proud-slider-pagination swiper-pagination"></div>
                     </div>
-                    <div class="proud-content">
+                    <div class="proud-content" data-aos="fade-right">
                         <h2>Sustainability</h2>
                         <div class="proud-content-description">
                             <p>At Roasters, sustainability is more than a value — it’s a responsibility. We are committed to reducing our environmental impact through conscious choices at every level of our operation.</p>
@@ -721,13 +723,13 @@
                 </div>
             </div>
             <div class="proud-bg">
-                <img src="assets/images/proud-bg.png" width="1920" height="1080" loading="lazy" alt="image">
+                <picture><source srcset="assets/images/proud-bg.webp" type="image/webp"><img src="assets/images/proud-bg.png" width="1920" height="1080" loading="lazy" alt="image"></picture>
             </div>
         </section>
 
         <!-- Contact Section -->
         <section class="contact" id="contact">
-            <div class="container">
+            <div class="container" data-aos="fade-up">
                 <h2>Contacts</h2>
                 <address>
                     <p>Roasters Specialty Coffee House <br>
@@ -743,24 +745,24 @@
             </div>
 
             <div class="contact-bg">
-                <img src="assets/images/contact-bg.png" width="1920" height="1080" loading="lazy" alt="image">
+                <picture><source srcset="assets/images/contact-bg.webp" type="image/webp"><img src="assets/images/contact-bg.png" width="1920" height="1080" loading="lazy" alt="image"></picture>
             </div>
         </section>
 
         <!-- Retail Beans Section -->
-        <section class="retail">
+        <section class="retail" id="retail">
             <div class="container-wrapper">
-                <div class="container">
+                <div class="container" data-aos="fade-up">
                     <h2>Retail Beans</h2>
                 </div>
-                <div class="retail-swiper swiper scrollable" >
+                <div class="retail-swiper swiper scrollable" data-aos="fade-up" data-aos-delay="200">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="retail-swiper-box">
                                 <div class="retail-swiper-image">
                                     <p class="retail-swiper-counter"><span class="counter" data-target="92">92</span></p>
                                     <div class="retail-swiper-image-product">
-                                        <img src="assets/images/retail-product.png" width="165" height="230" loading="lazy" alt="">
+                                        <picture><source srcset="assets/images/retail-product.webp" type="image/webp"><img src="assets/images/retail-product.png" width="165" height="230" loading="lazy" alt=""></picture>
                                     </div>
                                     <div>
                                         <img src="assets/images/logo1.svg" width="58" height="58" alt="">
@@ -784,7 +786,7 @@
                                 <div class="retail-swiper-image">
                                     <p class="retail-swiper-counter"><span class="counter" data-target="88">88</span></p>
                                     <div class="retail-swiper-image-product">
-                                        <img src="assets/images/retail-product.png" width="165" height="230" loading="lazy" alt="">
+                                        <picture><source srcset="assets/images/retail-product.webp" type="image/webp"><img src="assets/images/retail-product.png" width="165" height="230" loading="lazy" alt=""></picture>
                                     </div>
                                     <div>
                                         <img src="assets/images/icon2.svg" width="58" height="58" alt="">
@@ -808,7 +810,7 @@
                                 <div class="retail-swiper-image">
                                     <p class="retail-swiper-counter"><span class="counter" data-target="88">88</span></p>
                                     <div class="retail-swiper-image-product">
-                                        <img src="assets/images/retail-product.png" width="165" height="230" loading="lazy" alt="">
+                                        <picture><source srcset="assets/images/retail-product.webp" type="image/webp"><img src="assets/images/retail-product.png" width="165" height="230" loading="lazy" alt=""></picture>
                                     </div>
                                     <div>
                                         <img src="assets/images/icon3.svg" width="58" height="58" alt="">
@@ -831,7 +833,7 @@
                                 <div class="retail-swiper-image">
                                     <p class="retail-swiper-counter"><span class="counter" data-target="88">88</span></p>
                                     <div class="retail-swiper-image-product">
-                                        <img src="assets/images/retail-product.png" width="165" height="230" loading="lazy" alt="">
+                                        <picture><source srcset="assets/images/retail-product.webp" type="image/webp"><img src="assets/images/retail-product.png" width="165" height="230" loading="lazy" alt=""></picture>
                                     </div>
                                     <div>
                                         <img src="assets/images/icon3.svg" width="58" height="58" alt="">
@@ -854,7 +856,7 @@
                                 <div class="retail-swiper-image">
                                     <p class="retail-swiper-counter"><span class="counter" data-target="88">88</span></p>
                                     <div class="retail-swiper-image-product">
-                                        <img src="assets/images/retail-product.png" width="165" height="230" loading="lazy" alt="">
+                                        <picture><source srcset="assets/images/retail-product.webp" type="image/webp"><img src="assets/images/retail-product.png" width="165" height="230" loading="lazy" alt=""></picture>
                                     </div>
                                     <div>
                                         <img src="assets/images/icon3.svg" width="58" height="58" alt="">
@@ -877,19 +879,19 @@
                 </div>
             </div>
             <div class="retail-bg">
-                <img src="assets/images/retail-bg.png" width="1920" height="1080" loading="lazy" alt="image">
+                <picture><source srcset="assets/images/retail-bg.webp" type="image/webp"><img src="assets/images/retail-bg.png" width="1920" height="1080" loading="lazy" alt="image"></picture>
             </div>
         </section>
 
         <!-- Franchise Section -->
-        <section class="franchise">
+        <section class="franchise" id="franchise">
             <div class="container">
-                <div class="franchise-title">
+                <div class="franchise-title" data-aos="fade-up">
                     <h2>Franchise</h2>
                     <p>Roasters is expanding — and we’re looking for passionate partners to grow with us. Our franchise program combines operational expertise, scalable systems, and premium brand positioning.</p>
                 </div>
 
-                <form class="franchise-form">
+                <form class="franchise-form" data-aos="fade-up" data-aos-delay="200">
                     <input type="text" name="name" id="name" placeholder="Name">
                     <input type="tel" name="tel" id="tel" placeholder="Call">
                     <input type="email" name="email" id="email" placeholder="Email">
@@ -899,19 +901,19 @@
                 </form>
             </div>
             <div class="franchise-bg">
-                <img src="assets/images/franchise-bg.png" width="1920" height="1080" loading="lazy" alt="">
+                <picture><source srcset="assets/images/franchise-bg.webp" type="image/webp"><img src="assets/images/franchise-bg.png" width="1920" height="1080" loading="lazy" alt=""></picture>
             </div>
         </section>
 
         <!-- News Section -->
         <section class="news">
             <div class="container">
-                <h2>News</h2>
-                <div class="news-list">
+                <h2 data-aos="fade-up">News</h2>
+                <div class="news-list" data-aos="fade-up" data-aos-delay="200">
                     <article class="news-item">
                         <a href="/" class="news-item-link">
                             <div class="news-item-image">
-                                <img src="assets/images/news1.jpg" width="476" height="190" loading="lazy" alt="image">
+                                <picture><source srcset="assets/images/news1.webp" type="image/webp"><img src="assets/images/news1.jpg" width="476" height="190" loading="lazy" alt="image"></picture>
                             </div>
                             <h3 class="news-item-title">Interview with Elza Shirokova</h3>
                             <p class="news-item-text">Co-founder and Managing Director at Roasters Specialty Coffee House</p>
@@ -923,7 +925,7 @@
                     <article class="news-item">
                         <a href="/" class="news-item-link">
                             <div class="news-item-image">
-                                <img src="assets/images/news2.jpg" width="476" height="190" loading="lazy" alt="image">
+                                <picture><source srcset="assets/images/news2.webp" type="image/webp"><img src="assets/images/news2.jpg" width="476" height="190" loading="lazy" alt="image"></picture>
                             </div>
                             <h3 class="news-item-title">Our 10th location.</h3>
                             <p class="news-item-text">Roasters Comes to Dubai Hills</p>
@@ -935,7 +937,7 @@
                     <article class="news-item">
                         <a href="/" class="news-item-link">
                             <div class="news-item-image">
-                                <img src="assets/images/news3.jpg" width="476" height="190" loading="lazy" alt="image">
+                                <picture><source srcset="assets/images/news3.webp" type="image/webp"><img src="assets/images/news3.jpg" width="476" height="190" loading="lazy" alt="image"></picture>
                             </div>
                             <p class="news-item-text">Roasters Sets Guinness Record with the World’s Most Expensive Cup of Coffee</p>
                             <span class="news-item-links">read more
@@ -946,7 +948,7 @@
                     <article class="news-item">
                         <a href="/" class="news-item-link">
                             <div class="news-item-image">
-                                <img src="assets/images/news2.jpg" width="476" height="190" loading="lazy" alt="image">
+                                <picture><source srcset="assets/images/news2.webp" type="image/webp"><img src="assets/images/news2.jpg" width="476" height="190" loading="lazy" alt="image"></picture>
                             </div>
                             
                             <h3 class="news-item-title">Our 10th location.</h3>
@@ -959,7 +961,7 @@
                     <article class="news-item">
                         <a href="/" class="news-item-link">
                             <div class="news-item-image">
-                                <img src="assets/images/news3.jpg" width="476" height="190" loading="lazy" alt="image">
+                                <picture><source srcset="assets/images/news3.webp" type="image/webp"><img src="assets/images/news3.jpg" width="476" height="190" loading="lazy" alt="image"></picture>
                             </div>
                             <p class="news-item-text">Roasters Sets Guinness Record with the World’s Most Expensive Cup of Coffee</p>
                             <span class="news-item-links">read more
@@ -970,7 +972,7 @@
                     <article class="news-item">
                         <a href="/" class="news-item-link">
                             <div class="news-item-image">
-                                <img src="assets/images/news1.jpg" width="476" height="190" loading="lazy" alt="image">
+                                <picture><source srcset="assets/images/news1.webp" type="image/webp"><img src="assets/images/news1.jpg" width="476" height="190" loading="lazy" alt="image"></picture>
                             </div>
                             <h3 class="news-item-title">Interview with Elza Shirokova</h3>
                             <p class="news-item-text">Co-founder and Managing Director at Roasters Specialty Coffee House</p>
@@ -983,23 +985,23 @@
                 <button class="news-view">View More</button>
             </div>
             <div class="news-bg">
-                <img src="assets/images/news-bg.png" width="1920" height="1080" loading="lazy" alt="image">
+                <picture><source srcset="assets/images/news-bg.webp" type="image/webp"><img src="assets/images/news-bg.png" width="1920" height="1080" loading="lazy" alt="image"></picture>
             </div>
         </section>
 
         <!-- Team Section -->
         <section class="team">
             <div class="container">
-                <div class="team-content">
+                <div class="team-content" data-aos="fade-right">
                     <h2>Team</h2>
                     <p>A passionate, diverse, high-performance team driven by creativity, ownership, and a shared mission to excel.</p>
                 </div>
-                <div class="team-swiper swiper">
+                <div class="team-swiper swiper" data-aos="fade-left">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="team-item">
                                 <div class="team-item-image">
-                                    <img src="assets/images/team1.jpg" width="370" height="370" alt="">
+                                    <picture><source srcset="assets/images/team1.webp" type="image/webp"><img src="assets/images/team1.jpg" width="370" height="370" alt=""></picture>
                                 </div>
                                 <h3>Konstantin Harbuz</h3>
                                 <p>Founder CEO</p>
@@ -1008,7 +1010,7 @@
                         <div class="swiper-slide">
                             <div class="team-item">
                                 <div class="team-item-image">
-                                    <img src="assets/images/team2.jpg" width="370" height="370" alt="">
+                                    <picture><source srcset="assets/images/team2.webp" type="image/webp"><img src="assets/images/team2.jpg" width="370" height="370" alt=""></picture>
                                 </div>
                                 <h3>Elza Shirokova</h3>
                                 <p>Co-founder</p>
@@ -1017,7 +1019,7 @@
                         <div class="swiper-slide">
                             <div class="team-item">
                                 <div class="team-item-image">
-                                    <img src="assets/images/team3.jpg" width="370" height="370" alt="">
+                                    <picture><source srcset="assets/images/team3.webp" type="image/webp"><img src="assets/images/team3.jpg" width="370" height="370" alt=""></picture>
                                 </div>
                                 <h3>Israr Ahmed </h3>
                                 <p>Finance Director</p>
@@ -1026,7 +1028,7 @@
                         <div class="swiper-slide">
                             <div class="team-item">
                                 <div class="team-item-image">
-                                    <img src="assets/images/team4.jpg" width="370" height="370" alt="">
+                                    <picture><source srcset="assets/images/team4.webp" type="image/webp"><img src="assets/images/team4.jpg" width="370" height="370" alt=""></picture>
                                 </div>
                                 <h3>Elena Savina</h3>
                                 <p>Marketing Director</p>
@@ -1037,7 +1039,7 @@
                 </div>
             </div>
             <div class="team-bg">
-                <img src="assets/images/team-bg.png" width="1920" height="1080" loading="lazy" alt="image">
+                <picture><source srcset="assets/images/team-bg.webp" type="image/webp"><img src="assets/images/team-bg.png" width="1920" height="1080" loading="lazy" alt="image"></picture>
             </div>
         </section>
 
@@ -1045,7 +1047,7 @@
     </main>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer" data-aos="fade-up">
         <div class="container">
             <div class="footer__content">
                 <div class="footer__col">
@@ -1065,11 +1067,11 @@
                 <div class="footer__col">
                     <h3 class="footer__title">Navigation</h3>
                     <ul class="footer__nav">
-                        <li><a href="/">Main</a></li>
-                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#hero">Main</a></li>
+                        <li><a href="#about-scene">About Us</a></li>
                         <li><a href="#branches">Branches</a></li>
-                        <li><a href="/">Franchise</a></li>
-                        <li><a href="#branches">Menu</a></li>
+                        <li><a href="#franchise">Franchise</a></li>
+                        <li><a href="#menu">Menu</a></li>
                     </ul>
                 </div>
 
@@ -1101,6 +1103,8 @@
     <script src="assets/libs/swiper/swiper-bundle.min.js"></script>
     <script src="assets/libs/fancybox/fancybox.umd.js"></script>
     <script src="assets/libs/parallax/parallax.min.js"></script>
+    <script src="assets/libs/aos/aos.js"></script>
+    <script src="assets/libs/lenis/lenis.min.js"></script>
     
     <!-- Main Script -->
     <script src="assets/js/script.js"></script>

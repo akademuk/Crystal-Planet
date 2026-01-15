@@ -378,14 +378,12 @@ button, a {
 
 .about__parallax-bg {
     position: absolute;
-    /* top: -10%;
-    left: -10%;
-    width: 120%;
-    height: 120%; */
+    top: -30%;
+    left: 0;
+    width: 100%;
+    height: 160%;
+    object-fit: cover;
     z-index: -1;
-    width: 1920px;
-    height: 1500px;
-    inset: 0;
 }
 
 .about-bg::before {
@@ -575,7 +573,7 @@ button, a {
     display: flex;
     max-width: 304px;
     width: 100%;
-    padding: 12px 22px;
+    padding: 4px 22px;
     justify-content: center;
     align-items: center;
     color: #FFF;
@@ -759,8 +757,9 @@ button, a {
 
 .branches__location::before {
     content: "";
-    width: 8px;
-    height: 11px;
+    width: 12px;
+    height: 12px;
+    flex-shrink: 0;
     background: url(../images/loc.svg) no-repeat center center;
     background-size: contain;
     display: inline-block;
@@ -768,8 +767,9 @@ button, a {
 
 .branches__thime::before {
     content: "";
-    width: 8px;
-    height: 11px;
+    width: 12px;
+    height: 12px;
+        flex-shrink: 0;
     background: url(../images/phone.svg) no-repeat center center;
     background-size: contain;
     display: inline-block;
@@ -777,8 +777,9 @@ button, a {
 
 .branches__thime:nth-of-type(2):before {
     content: "";
-    width: 8px;
-    height: 11px;
+    width: 12px;
+    height: 12px;
+    flex-shrink: 0;
     background: url(../images/time.svg) no-repeat center center;
     background-size: contain;
     display: inline-block;
@@ -1478,6 +1479,14 @@ button, a {
     color: rgba(255, 255, 255, 0.5);
 }
 
+.sustainability .proud-slider .swiper-slide {
+    height: 440px;
+}
+
+.sustainability .proud-slider {
+    height: 500px;
+}
+
 @media (max-width: 1280px) {
 
     .header__burger {
@@ -1692,6 +1701,10 @@ button, a {
     .footer {
         padding: 64px 16px;
     }
+
+    .menu {
+        padding-top: 64px;
+    }
 }
 
 
@@ -1744,6 +1757,23 @@ button, a {
         font-size: 3rem;
     }
 
+    .news {
+        overflow: visible;
+    }
+
+    .news-list {
+        position: relative;
+    }
+
+    .menu-content-link {
+        font-size: 24px;
+    }
+
+    .news-item {
+        position: sticky;
+        top: 100px;
+    }
+
     .mission__content p {
         font-size: 18px;
     }
@@ -1765,10 +1795,10 @@ button, a {
         font-size: 18px;
     }
 
-    .about .about__parallax-bg {
+    /* .about .about__parallax-bg {
         height: 1200px;
         width: 1000px;
-    }
+    } */
 
     .mission__image img {
         width: 800px;
@@ -1841,6 +1871,42 @@ button, a {
     .news-item-text {
         margin-bottom: 16px;
     }
+
+    .branches__info-top {
+       flex-direction: column; 
+    }
+
+    .branches__popup {
+        padding: 16px;
+    }
+
+    .branches__info-top h3 {
+        font-size: 24px;
+    }
+
+    .branches__info-top--rating span {
+        font-size: 28px;
+    }
+
+    .branches__info-bottom {
+        flex-direction: column;
+    }
+
+    .branches__info-bottom ul {
+        gap: 8px;
+    }
+    
+    .proud-slider {
+        height: 350px;
+    }
+
+    .proud-slider .swiper-slide {
+        height: 300px;
+    }
+
+    .branches__info {
+        gap: 24px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -1848,4 +1914,168 @@ button, a {
         flex-direction: column;
         gap: 40px;
     }
+}
+
+/* --- Hover Effects --- */
+
+/* Header */
+.header__menu li a {
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+.header__menu li a:hover {
+    color: #fff;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
+}
+
+.header__content-contact--link {
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.header__content-contact--link:hover {
+    opacity: 0.7;
+}
+
+.header__content-contact--tel {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.header__content-contact--tel:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(58, 74, 62, 0.3);
+}
+
+/* Hero */
+.hero__list-link {
+    transition: all 0.3s ease;
+}
+.hero__list-link:not(.hero__list--link--active):hover {
+    background: rgba(255, 255, 255, 0.8);
+    color: #000;
+    transform: translateX(5px);
+}
+.hero__list--link--active:hover {
+    transform: translateX(5px);
+    box-shadow: 0 4px 12px rgba(58, 74, 62, 0.3);
+}
+
+/* Menu */
+.menu-content-link {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.menu-content-link:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(58, 74, 62, 0.4);
+}
+
+/* Swiper Navigation & Pagination */
+.swiper-button-next,
+.swiper-button-prev {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.05);
+}
+.swiper-button-next:active,
+.swiper-button-prev:active {
+    transform: scale(0.95);
+}
+
+/* Retail */
+.retail-swiper-btn {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+.retail-swiper-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(58, 74, 62, 0.2);
+}
+
+/* Franchise */
+.franchise-form-btn {
+    transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+    cursor: pointer;
+}
+.franchise-form-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(58, 74, 62, 0.3);
+    opacity: 0.95;
+}
+
+/* News */
+.news-item {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.news-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.news-item-image img {
+    transition: transform 0.5s ease;
+}
+.news-item:hover .news-item-image img {
+    transform: scale(1.05);
+}
+
+.news-item-links {
+    transition: padding 0.3s ease, gap 0.3s ease;
+}
+.news-item-link:hover .news-item-links {
+    gap: 15px;
+    padding-right: 20px;
+}
+
+.news-view {
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+.news-view:hover {
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+/* Branches */
+.branches__info-bottom-link {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: inline-block;
+}
+.branches__info-bottom-link:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(58, 74, 62, 0.3);
+}
+
+/* Contact Links */
+.contact address a {
+    transition: color 0.3s ease;
+}
+.contact address a:not(:has(img)):hover {
+    color: #3A4A3E;
+}
+.contact address a img {
+    transition: transform 0.3s ease;
+}
+.contact address a:has(img):hover img {
+    transform: scale(1.1) rotate(5deg);
+}
+
+/* Form Inputs Focus */
+.franchise-form input {
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+.franchise-form input:focus {
+    outline: none;
+    border-color: rgba(255, 255, 255, 0.6);
+    background: rgba(0, 0, 0, 0.6);
+}
+
+/* Burger Menu Hover */
+.header__burger span {
+    transition: background-color 0.3s ease, width 0.3s ease;
+}
+.header__burger:hover span {
+    background-color: #3A4A3E;
+}
+.header__burger:hover span:nth-child(2) {
+    width: 80%;
+    margin-left: auto;
 }

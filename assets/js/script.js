@@ -47,7 +47,15 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+
+    // Initialize AOS
+    AOS.init({
+        duration: 1000,
+        once: true,
+    });
 });
+
+
 
 // Swiper Initialization
 const proudSlider = new Swiper('.proud-slider', {
@@ -301,4 +309,51 @@ document.addEventListener('DOMContentLoaded', function() {
             releaseOnEdges: true, 
         },
     });
+});
+// Lenis Smooth Scroll
+document.addEventListener('DOMContentLoaded', () => {
+    // Check if Lenis is defined
+    if (typeof Lenis !== 'undefined') {
+        const lenis = new Lenis({
+            duration: 1.2,
+            easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+            direction: 'vertical',
+            gestureDirection: 'vertical',
+            smooth: true,
+            mouseMultiplier: 1,
+            smoothTouch: false,
+            touchMultiplier: 2,
+        });
+
+        // Loop
+        function raf(time) {
+            lenis.raf(time);
+            requestAnimationFrame(raf);
+        }
+        requestAnimationFrame(raf);
+
+        // Connect AOS to Lenis (optional optimization)
+        // AOS usually works fine, but refreshing on scroll helps sync
+        /* 
+        lenis.on('scroll', () => {
+             AOS.refresh(); 
+        }); 
+        */
+        
+        console.log('Lenis initialized');
+
+        // Smooth Scroll for Anchor Links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const targetId = this.getAttribute('href');
+                if (targetId && targetId !== '#') {
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        e.preventDefault();
+                        lenis.scrollTo(targetElement);
+                    }
+                }
+            });
+        });
+    }
 });
