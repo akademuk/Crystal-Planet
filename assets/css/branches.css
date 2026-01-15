@@ -1,0 +1,160 @@
+
+
+
+.branches__wrapper {
+    position: relative;
+    width: 100%;
+}
+
+
+.branches__map {
+    position: relative;
+    height: auto;
+}
+
+.branches__map-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Map Pins */
+.branches__pin {
+    position: absolute;
+    width: 70px;
+    height: 52px;
+    background: url('../images/dots.svg') no-repeat center center;
+    background-size: contain;
+    cursor: pointer;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    border: none;
+    transition: transform 0.3s ease;
+    padding: 0;
+}
+
+.branches__pin:hover,
+.branches__pin.active {
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+/* Overlay / Slider Modal (Centered Fixed) */
+.branches__popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.9);
+    width: 90%;
+    max-width: 500px;
+    background: #FFF;
+    padding: 32px 24px;
+    border-radius: 5px;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.25);
+    z-index: 9999;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+    pointer-events: none;
+}
+
+.branches__popup.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, -50%) scale(1);
+    pointer-events: all;
+}
+
+/* Close Button */
+.branches__close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+    line-height: 1;
+    z-index: 201;
+}
+
+
+/* Branch Slider */
+.branch-swiper {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.branch-swiper .swiper-slide {
+    height: 250px;
+}
+
+.branch-swiper .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .branches__map {
+        min-width: 1200px;
+    }
+    
+    /* On mobile just ensure it fits nicely, distinct from desktop overrides */
+    .branches__popup {
+        width: 95%;
+    }
+}
+
+
+
+
+
+/* --- СТРУКТУРА КАРТЫ --- */
+.branches-section {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Обертка для скролла (срабатывает только на мобилках) */
+.map-scroll-wrapper {
+    width: 100%;
+    /* По умолчанию скролла нет (для десктопа) */
+    overflow: visible; 
+}
+
+/* Контейнер самой картинки и точек */
+.map-container {
+    position: relative;
+    width: 100%; /* На десктопе резина */
+    transform-origin: top left;
+}
+
+.map-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    user-select: none;
+}
+
+
+
+/* --- ГИБРИДНЫЙ РЕЖИМ (СЕКРЕТ УСПЕХА) --- */
+@media (max-width: 1024px) {
+    .branches__wrapper {
+        overflow-x: auto; /* Включаем горизонтальный скролл */
+        -webkit-overflow-scrolling: touch; /* Плавность на iOS */
+        scrollbar-width: none; 
+    }
+    .branches__wrapper::-webkit-scrollbar {
+        display: none;
+    }
+
+    .map-container {
+        min-width: 1200px; 
+    }
+}
+
