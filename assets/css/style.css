@@ -8,8 +8,9 @@ body {
     background-color: #F4F4F4;
 }
 
-button, a {
-       font-family: 'Philosopher', sans-serif;
+button,
+a {
+    font-family: 'Philosopher', sans-serif;
 }
 
 
@@ -52,7 +53,7 @@ button, a {
 .container {
     max-width: 1596px;
     margin: 0 auto;
-    width:100%;
+    width: 100%;
 }
 
 .header__content {
@@ -92,7 +93,7 @@ button, a {
 .header__menu li a {
     color: rgba(255, 255, 255, 0.50);
     font-size: 14px;
-    line-height: 1.2; 
+    line-height: 1.2;
     text-decoration: none;
 }
 
@@ -109,7 +110,7 @@ button, a {
     color: #000;
     text-decoration: none;
     font-size: 12px;
-    line-height: 1.2; 
+    line-height: 1.2;
 }
 
 .header__content-contact--badge {
@@ -123,7 +124,7 @@ button, a {
     backdrop-filter: blur(4px);
     color: #FFF;
     font-size: 12px;
-    line-height: 1.2; 
+    line-height: 1.2;
 }
 
 .header__content-contact--badge::before {
@@ -142,7 +143,7 @@ button, a {
     text-align: center;
     font-family: 'Philosopher', sans-serif;
     font-size: 12px;
-    line-height: 1.2; 
+    line-height: 1.2;
     text-decoration: none;
 }
 
@@ -166,7 +167,7 @@ button, a {
 .hero__content h1 {
     font-size: 111px;
     font-weight: 400;
-    line-height: 87%; 
+    line-height: 87%;
 }
 
 .hero__content h1 mark {
@@ -229,7 +230,7 @@ button, a {
     border-radius: 11px;
     background: #D3D3D3;
     backdrop-filter: blur(8px);
-    color: #FFF;
+    color: #000;
     font-size: 14px;
     line-height: 1.2;
     justify-content: center;
@@ -240,6 +241,7 @@ button, a {
     border-radius: 11px;
     background: linear-gradient(180deg, #3A4A3E -6.14%, #FFF 209.77%);
     backdrop-filter: blur(8px);
+    color: #FFF;
 }
 
 .about {
@@ -248,7 +250,7 @@ button, a {
     overflow: hidden;
 }
 
-.about .container{
+.about .container {
     height: 100%;
     display: flex;
     justify-content: flex-end;
@@ -672,12 +674,12 @@ button, a {
 }
 
 
-.branch-swiper  .swiper-pagination {
+.branch-swiper .swiper-pagination {
     position: static;
     margin-top: 14px;
 }
 
-.branch-swiper  .swiper-pagination .swiper-pagination-bullet-active {
+.branch-swiper .swiper-pagination .swiper-pagination-bullet-active {
     background: #000;
 }
 
@@ -743,7 +745,7 @@ button, a {
     font-family: "Times New Roman";
     font-size: 16px;
     font-weight: 400;
-    line-height: 100%; 
+    line-height: 100%;
 }
 
 .branches__info-bottom ul li a {
@@ -751,7 +753,7 @@ button, a {
     font-family: "Times New Roman";
     font-size: 16px;
     font-weight: 400;
-    line-height: 100%; 
+    line-height: 100%;
     text-decoration: none;
 }
 
@@ -769,7 +771,7 @@ button, a {
     content: "";
     width: 12px;
     height: 12px;
-        flex-shrink: 0;
+    flex-shrink: 0;
     background: url(../images/phone.svg) no-repeat center center;
     background-size: contain;
     display: inline-block;
@@ -1024,7 +1026,7 @@ button, a {
     text-align: center;
     font-size: 18px;
     font-weight: 400;
-    line-height: 120%; 
+    line-height: 120%;
 }
 
 .franchise {
@@ -1127,7 +1129,7 @@ button, a {
     border: none;
 }
 
-.franchise-form-btn img{
+.franchise-form-btn img {
     filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(99deg) brightness(103%) contrast(101%);
 }
 
@@ -1162,7 +1164,7 @@ button, a {
     text-align: center;
     font-size: 111px;
     font-weight: 700;
-    line-height: 100%; 
+    line-height: 100%;
 }
 
 .news-list {
@@ -1201,7 +1203,7 @@ button, a {
     text-decoration: none;
 }
 
-.news-item-image { 
+.news-item-image {
     height: 190px;
     width: 100%;
     border-radius: 5px;
@@ -1302,7 +1304,7 @@ button, a {
     gap: 72px;
 }
 
-.team-swiper  .swiper-scrollbar {
+.team-swiper .swiper-scrollbar {
     position: static;
 }
 
@@ -1341,7 +1343,7 @@ button, a {
     color: #FFF;
     font-size: 29px;
     font-weight: 700;
-    line-height: 113%; 
+    line-height: 113%;
 }
 
 .team-item p {
@@ -1380,7 +1382,7 @@ button, a {
     display: block;
     margin-bottom: 24px;
     /* Invert logo to white if it is black */
-    filter: brightness(0) invert(1); 
+    filter: brightness(0) invert(1);
 }
 
 .footer__text {
@@ -1428,13 +1430,15 @@ button, a {
     color: #fff;
 }
 
-.footer__nav, .footer__contact {
+.footer__nav,
+.footer__contact {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-.footer__nav li, .footer__contact li {
+.footer__nav li,
+.footer__contact li {
     margin-bottom: 16px;
 }
 
@@ -1505,7 +1509,7 @@ button, a {
         display: flex;
         align-items: center;
         justify-content: center;
-        transition: 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+        transition: 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
         z-index: 1000;
         border-radius: 0;
         padding: 0;
@@ -1533,16 +1537,19 @@ button, a {
     .header__burger.active span:nth-child(1) {
         transform: rotate(45deg) translate(5px, 6px);
     }
+
     .header__burger.active span:nth-child(2) {
         opacity: 0;
     }
+
     .header__burger.active span:nth-child(3) {
         transform: rotate(-45deg) translate(6px, -8px);
     }
-    
+
     /* Hide desktop elements or adjust */
     .header__content-contact {
-        display: none; /* Simplify for mobile or move into menu if needed */
+        display: none;
+        /* Simplify for mobile or move into menu if needed */
     }
 
     .hero .container {
@@ -1590,7 +1597,7 @@ button, a {
         padding: 0 16px;
     }
 
-        .mission .container {
+    .mission .container {
         align-items: flex-start;
     }
 
@@ -1722,7 +1729,7 @@ button, a {
         height: auto;
     }
 
-    .header__logo img{
+    .header__logo img {
         width: 100%;
         height: 100%;
         object-fit: contain;
@@ -1791,7 +1798,7 @@ button, a {
         font-size: 18px;
     }
 
-    .proud-content-description p{
+    .proud-content-description p {
         font-size: 18px;
     }
 
@@ -1866,14 +1873,14 @@ button, a {
         width: 100%;
         min-height: 400px;
         height: auto;
-    } 
+    }
 
     .news-item-text {
         margin-bottom: 16px;
     }
 
     .branches__info-top {
-       flex-direction: column; 
+        flex-direction: column;
     }
 
     .branches__popup {
@@ -1895,7 +1902,7 @@ button, a {
     .branches__info-bottom ul {
         gap: 8px;
     }
-    
+
     .proud-slider {
         height: 350px;
     }
@@ -1922,6 +1929,7 @@ button, a {
 .header__menu li a {
     transition: color 0.3s ease, text-shadow 0.3s ease;
 }
+
 .header__menu li a:hover {
     color: #fff;
     text-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
@@ -1930,6 +1938,7 @@ button, a {
 .header__content-contact--link {
     transition: opacity 0.3s ease, transform 0.3s ease;
 }
+
 .header__content-contact--link:hover {
     opacity: 0.7;
 }
@@ -1937,6 +1946,7 @@ button, a {
 .header__content-contact--tel {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 .header__content-contact--tel:hover {
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(58, 74, 62, 0.3);
@@ -1946,11 +1956,13 @@ button, a {
 .hero__list-link {
     transition: all 0.3s ease;
 }
+
 .hero__list-link:not(.hero__list--link--active):hover {
     background: rgba(255, 255, 255, 0.8);
     color: #000;
     transform: translateX(5px);
 }
+
 .hero__list--link--active:hover {
     transform: translateX(5px);
     box-shadow: 0 4px 12px rgba(58, 74, 62, 0.3);
@@ -1960,6 +1972,7 @@ button, a {
 .menu-content-link {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 .menu-content-link:hover {
     transform: translateY(-3px);
     box-shadow: 0 6px 16px rgba(58, 74, 62, 0.4);
@@ -1970,11 +1983,13 @@ button, a {
 .swiper-button-prev {
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
+
 .swiper-button-next:hover,
 .swiper-button-prev:hover {
     background-color: #f0f0f0;
     transform: scale(1.05);
 }
+
 .swiper-button-next:active,
 .swiper-button-prev:active {
     transform: scale(0.95);
@@ -1985,6 +2000,7 @@ button, a {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
 }
+
 .retail-swiper-btn:hover {
     transform: translateY(-2px);
     box-shadow: 0 4px 10px rgba(58, 74, 62, 0.2);
@@ -1995,6 +2011,7 @@ button, a {
     transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
     cursor: pointer;
 }
+
 .franchise-form-btn:hover {
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(58, 74, 62, 0.3);
@@ -2005,6 +2022,7 @@ button, a {
 .news-item {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 .news-item:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
@@ -2013,6 +2031,7 @@ button, a {
 .news-item-image img {
     transition: transform 0.5s ease;
 }
+
 .news-item:hover .news-item-image img {
     transform: scale(1.05);
 }
@@ -2020,6 +2039,7 @@ button, a {
 .news-item-links {
     transition: padding 0.3s ease, gap 0.3s ease;
 }
+
 .news-item-link:hover .news-item-links {
     gap: 15px;
     padding-right: 20px;
@@ -2029,6 +2049,7 @@ button, a {
     transition: background-color 0.3s ease, color 0.3s ease;
     cursor: pointer;
 }
+
 .news-view:hover {
     background-color: #1a1a1a;
     color: #fff;
@@ -2039,6 +2060,7 @@ button, a {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: inline-block;
 }
+
 .branches__info-bottom-link:hover {
     transform: translateY(-2px);
     box-shadow: 0 4px 10px rgba(58, 74, 62, 0.3);
@@ -2048,12 +2070,15 @@ button, a {
 .contact address a {
     transition: color 0.3s ease;
 }
+
 .contact address a:not(:has(img)):hover {
     color: #3A4A3E;
 }
+
 .contact address a img {
     transition: transform 0.3s ease;
 }
+
 .contact address a:has(img):hover img {
     transform: scale(1.1) rotate(5deg);
 }
@@ -2062,6 +2087,7 @@ button, a {
 .franchise-form input {
     transition: border-color 0.3s ease, background-color 0.3s ease;
 }
+
 .franchise-form input:focus {
     outline: none;
     border-color: rgba(255, 255, 255, 0.6);
@@ -2072,9 +2098,11 @@ button, a {
 .header__burger span {
     transition: background-color 0.3s ease, width 0.3s ease;
 }
+
 .header__burger:hover span {
     background-color: #3A4A3E;
 }
+
 .header__burger:hover span:nth-child(2) {
     width: 80%;
     margin-left: auto;
