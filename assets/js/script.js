@@ -105,6 +105,9 @@ const closeAllPopups = () => {
     document.body.style.overflow = '';
     document.documentElement.style.overflow = '';
     if (mapContainer) mapContainer.style.overflowX = '';
+
+    // Unlock Lenis Scroll
+    if (window.lenis) window.lenis.start();
 };
 
 // Init Branch Swipers
@@ -154,6 +157,9 @@ pins.forEach(pin => {
             document.body.style.overflow = 'hidden';
             document.documentElement.style.overflow = 'hidden';
             if (mapContainer) mapContainer.style.overflowX = 'hidden';
+
+            // Lock Lenis Scroll
+            if (window.lenis) window.lenis.stop();
         }
     });
 });
@@ -329,6 +335,7 @@ document.addEventListener('DOMContentLoaded', () => {
         */
         
         console.log('Lenis initialized');
+        window.lenis = lenis; // Expose to global for popup logic
 
         // Smooth Scroll for Anchor Links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
