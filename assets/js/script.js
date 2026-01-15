@@ -84,10 +84,22 @@ const menuSlider = new Swiper('.menu-swiper', {
 });
 
 // Branches Logic
-const pins = document.querySelectorAll('.branches__pin');
+const pins = document.querySelectorAll('.branches__pin, .map-pin');
 const popups = document.querySelectorAll('.branches__popup');
-const closeButtons = document.querySelectorAll('.branches__close');
+const closeButtons = document.querySelectorAll('.branches__close, .close-popup');
 const mapContainer = document.querySelector('.branches__wrapper');
+const overlay = document.getElementById('popup-overlay') || document.querySelector('.popup-overlay');
+
+// Helper: Close All
+const closeAllPopups = () => {
+    popups.forEach(p => p.classList.remove('active'));
+    pins.forEach(p => p.classList.remove('active'));
+    if (overlay) overlay.classList.remove('active');
+
+    document.body.style.overflow = '';
+    document.documentElement.style.overflow = '';
+    if (mapContainer) mapContainer.style.overflowX = '';
+};
 
 // Init Branch Swipers
 const branchSwipers = document.querySelectorAll('.branch-swiper');
@@ -98,8 +110,8 @@ branchSwipers.forEach(swiperEl => {
         observeParents: true,
         grabCursor: true,
         nested: true,
-        touchMoveStopPropagation: true, // Stop swipe event from bubbling
-        touchStartPreventDefault: false, // Better mobile scrolling behavior
+        touchMoveStopPropagation: true, 
+        touchStartPreventDefault: false, 
         autoplay: {
             delay: 3000,
             disableOnInteraction: false,
@@ -111,7 +123,7 @@ branchSwipers.forEach(swiperEl => {
     });
 });
 
-// Stop events inside popup from bubbling to document (prevents accidental closing)
+// Stop events inside popup from bubbling
 popups.forEach(popup => {
     popup.addEventListener('click', (e) => e.stopPropagation());
     popup.addEventListener('touchstart', (e) => e.stopPropagation(), { passive: true });
@@ -121,44 +133,55 @@ popups.forEach(popup => {
 // Pin Click Event
 pins.forEach(pin => {
     pin.addEventListener('click', (e) => {
+        e.stopPropagation();
         const id = pin.getAttribute('data-id');
         const targetPopup = document.getElementById('branch-popup-' + id);
 
-        // Close all
-        popups.forEach(p => p.classList.remove('active'));
-        pins.forEach(p => p.classList.remove('active'));
+        closeAllPopups(); // clear others first
 
-        // Open target
         if (targetPopup) {
             targetPopup.classList.add('active');
             pin.classList.add('active');
-            document.body.style.overflow = 'hidden'; // Lock body scroll
-            document.documentElement.style.overflow = 'hidden'; // Lock html scroll (for some browsers)
-            if (mapContainer) mapContainer.style.overflowX = 'hidden'; // Lock map scroll
+            if (overlay) overlay.classList.add('active');
+
+            // Lock Scroll
+            document.body.style.overflow = 'hidden';
+            document.documentElement.style.overflow = 'hidden';
+            if (mapContainer) mapContainer.style.overflowX = 'hidden';
         }
     });
 });
 
 // Close Button Event
 closeButtons.forEach(btn => {
-    btn.addEventListener('click', () => {
-        popups.forEach(p => p.classList.remove('active'));
-        pins.forEach(p => p.classList.remove('active'));
-        document.body.style.overflow = '';
-        document.documentElement.style.overflow = '';
-        if (mapContainer) mapContainer.style.overflowX = '';
+    btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        closeAllPopups();
     });
 });
 
-// Close on click outside (optional)
+// Overlay Click Event
+if (overlay) {
+    overlay.addEventListener('click', (e) => {
+        e.preventDefault();
+        closeAllPopups();
+    });
+    // Prevent background scroll interactions on iOS
+    overlay.addEventListener('touchmove', (e) => {
+        e.preventDefault();
+    }, { passive: false });
+}
+
+// Global Click (Fallback)
 document.addEventListener('click', (e) => {
     if (!e.target.closest('.branches__popup') && !e.target.closest('.branches__pin')) {
-        popups.forEach(p => p.classList.remove('active'));
-        pins.forEach(p => p.classList.remove('active'));
-        document.body.style.overflow = '';
-        document.documentElement.style.overflow = '';
-        if (mapContainer) mapContainer.style.overflowX = '';
+        closeAllPopups();
     }
+});
+
+// Escape Key
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeAllPopups();
 });
 
 const initRetailSlider = () => {
@@ -247,47 +270,6 @@ const initRetailSlider = () => {
 
 // Вызов
 document.addEventListener('DOMContentLoaded', initRetailSlider);
-
-
-document.addEventListener('DOMContentLoaded', function() {
-    const pins = document.querySelectorAll('.map-pin');
-    const overlay = document.getElementById('popup-overlay');
-    const closeButtons = document.querySelectorAll('.close-popup');
-    
-    // Функция закрытия всего
-    const closeAll = () => {
-        document.querySelectorAll('.branches__popup').forEach(p => p.classList.remove('active'));
-        document.querySelectorAll('.map-pin').forEach(p => p.classList.remove('active'));
-        overlay.classList.remove('active');
-        document.body.style.overflow = ''; // Возвращаем скролл сайта
-    };
-
-    // Клик по пину
-    pins.forEach(pin => {
-        pin.addEventListener('click', (e) => {
-            e.stopPropagation();
-            const id = pin.getAttribute('data-id');
-            const popup = document.getElementById(`branch-popup-${id}`);
-            
-            if (popup) {
-                closeAll(); // Закрываем старое
-                
-                popup.classList.add('active');
-                overlay.classList.add('active');
-                pin.classList.add('active');
-                
-                // Блокируем скролл сайта, чтобы не елозил фон пока читаешь попап
-                document.body.style.overflow = 'hidden';
-            }
-        });
-    });
-
-    // Закрытие по клику на оверлей
-    overlay.addEventListener('click', closeAll);
-
-    // Закрытие по крестику
-    closeButtons.forEach(btn => btn.addEventListener('click', closeAll));
-});
 
 document.addEventListener('DOMContentLoaded', function() {
     const teamSwiper = new Swiper('.team-swiper', {
