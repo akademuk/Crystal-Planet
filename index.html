@@ -69,14 +69,13 @@
 
     <!-- Main CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/branches.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="assets/css/branches.css">
 
     <!-- NoScript Fallback -->
     <noscript>
         <link rel="stylesheet" href="assets/libs/swiper/swiper-bundle.min.css"/>
         <link rel="stylesheet" href="assets/libs/aos/aos.css"/>
         <link rel="stylesheet" href="assets/libs/lenis/lenis.css"/>
-        <link rel="stylesheet" href="assets/css/branches.css">
     </noscript>
 
     <!-- Scripts (Deferred) -->
@@ -361,6 +360,16 @@
         <section class="branches" id="branches">
             <div class="branches-wrapper">
                 <h2>Branches</h2>
+                
+                <!-- Navigation Arrows (for mobile scroll) -->
+                <div class="branches-scroll-controls">
+                    <button class="branches-scroll-btn prev" aria-label="Scroll Left">
+                        <img src="assets/images/lucide/chevron-right.svg" width="24" height="24" alt="">
+                    </button>
+                    <button class="branches-scroll-btn next" aria-label="Scroll Right">
+                        <img src="assets/images/lucide/chevron-right.svg" width="24" height="24" alt="">
+                    </button>
+                </div>
 
                 <div class="branches__wrapper">
                     <div class="branches__map" data-aos="zoom-in" data-aos-duration="1500">
@@ -390,7 +399,7 @@
                         <button class="branches__pin map-pin" data-id="6" style="left: 56.51%; top: 35.18%;"
                             aria-label="Sharjah"></button>
 
-                        <button class="branches__pin map-pin" data-id="7" style="left: 62.50%; top: 40.74%;"
+                        <button class="branches__pin map-pin" data-id="7" style="left: 63.5%; top: 45.74%;"
                             aria-label="RAK"></button>
 
                         <button class="branches__pin map-pin" data-id="8" style="left: 65.10%; top: 43.05%;"
@@ -412,36 +421,8 @@
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <picture>
-                                        <source srcset="assets/images/slider-item1.webp" type="image/webp"><img
-                                            src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy"
-                                            alt="Interior">
-                                    </picture>
-                                </div>
-                                <div class="swiper-slide">
-                                    <picture>
-                                        <source srcset="assets/images/slider-item1.webp" type="image/webp"><img
-                                            src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy"
-                                            alt="Coffee">
-                                    </picture>
-                                </div>
-                                <div class="swiper-slide">
-                                    <picture>
-                                        <source srcset="assets/images/slider-item1.webp" type="image/webp"><img
-                                            src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy"
-                                            alt="Interior">
-                                    </picture>
-                                </div>
-                                <div class="swiper-slide">
-                                    <picture>
-                                        <source srcset="assets/images/slider-item1.webp" type="image/webp"><img
-                                            src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy"
-                                            alt="Coffee">
-                                    </picture>
-                                </div>
-                                <div class="swiper-slide">
-                                    <picture>
-                                        <source srcset="assets/images/slider-item1.webp" type="image/webp"><img
-                                            src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy"
+                                        <source srcset="assets/images/coffe7.webp" type="image/webp"><img
+                                            src="assets/images/coffe7.JPG" width="576" height="383" loading="lazy"
                                             alt="Interior">
                                     </picture>
                                 </div>
@@ -480,36 +461,8 @@
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <picture>
-                                        <source srcset="assets/images/slider-item1.webp" type="image/webp"><img
-                                            src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy"
-                                            alt="Interior">
-                                    </picture>
-                                </div>
-                                <div class="swiper-slide">
-                                    <picture>
-                                        <source srcset="assets/images/slider-item1.webp" type="image/webp"><img
-                                            src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy"
-                                            alt="Coffee">
-                                    </picture>
-                                </div>
-                                <div class="swiper-slide">
-                                    <picture>
-                                        <source srcset="assets/images/slider-item1.webp" type="image/webp"><img
-                                            src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy"
-                                            alt="Interior">
-                                    </picture>
-                                </div>
-                                <div class="swiper-slide">
-                                    <picture>
-                                        <source srcset="assets/images/slider-item1.webp" type="image/webp"><img
-                                            src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy"
-                                            alt="Coffee">
-                                    </picture>
-                                </div>
-                                <div class="swiper-slide">
-                                    <picture>
-                                        <source srcset="assets/images/slider-item1.webp" type="image/webp"><img
-                                            src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy"
+                                        <source srcset="assets/images/coffe4.webp" type="image/webp"><img
+                                            src="assets/images/coffe4.JPG" width="576" height="383" loading="lazy"
                                             alt="Interior">
                                     </picture>
                                 </div>
@@ -518,9 +471,9 @@
                         </div>
                         <div class="branches__info">
                             <div class="branches__info-top">
-                                <h3>ROASTERS Specialty Coffee<br /> House Emaar Beachfront</h3>
+                                <h3>Roasters Specialty Coffee House Emaar Beachfront</h3>
                                 <div class="branches__info-top--rating">
-                                    <span>4.6</span>
+                                    <span>4.5</span>
                                     <img src="assets/images/rating.svg" width="178" height="22" alt="">
                                 </div>
                             </div>
@@ -528,8 +481,7 @@
                                 <address>
                                     <ul>
                                         <li class="branches__location">
-                                            <a href="https://maps.app.goo.gl/eZ5jZhVnHykbKTuZ9" target="_blank">Vista
-                                                Tower 1 — Emaar Beachfront — The Palm Jumeirah</a>
+                                            <a href="https://maps.app.goo.gl/ik6927SbyqzGHupy8" target="_blank">Vista Tower 1 — Emaar Beachfront — The Palm Jumeirah</a>
                                         </li>
                                         <li class="branches__thime">
                                             <span>Monday—Sunday: 7am–11pm</span>
@@ -549,36 +501,8 @@
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <picture>
-                                        <source srcset="assets/images/slider-item1.webp" type="image/webp"><img
-                                            src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy"
-                                            alt="Interior">
-                                    </picture>
-                                </div>
-                                <div class="swiper-slide">
-                                    <picture>
-                                        <source srcset="assets/images/slider-item1.webp" type="image/webp"><img
-                                            src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy"
-                                            alt="Coffee">
-                                    </picture>
-                                </div>
-                                <div class="swiper-slide">
-                                    <picture>
-                                        <source srcset="assets/images/slider-item1.webp" type="image/webp"><img
-                                            src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy"
-                                            alt="Interior">
-                                    </picture>
-                                </div>
-                                <div class="swiper-slide">
-                                    <picture>
-                                        <source srcset="assets/images/slider-item1.webp" type="image/webp"><img
-                                            src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy"
-                                            alt="Coffee">
-                                    </picture>
-                                </div>
-                                <div class="swiper-slide">
-                                    <picture>
-                                        <source srcset="assets/images/slider-item1.webp" type="image/webp"><img
-                                            src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy"
+                                        <source srcset="assets/images/coffe2.webp" type="image/webp"><img
+                                            src="assets/images/coffe2.JPG" width="576" height="383" loading="lazy"
                                             alt="Interior">
                                     </picture>
                                 </div>
@@ -616,34 +540,6 @@
                     <div class="branches__popup" id="branch-popup-4">
                         <div class="swiper branch-swiper">
                             <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <picture>
-                                        <source srcset="assets/images/slider-item1.webp" type="image/webp"><img
-                                            src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy"
-                                            alt="Interior">
-                                    </picture>
-                                </div>
-                                <div class="swiper-slide">
-                                    <picture>
-                                        <source srcset="assets/images/slider-item1.webp" type="image/webp"><img
-                                            src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy"
-                                            alt="Coffee">
-                                    </picture>
-                                </div>
-                                <div class="swiper-slide">
-                                    <picture>
-                                        <source srcset="assets/images/slider-item1.webp" type="image/webp"><img
-                                            src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy"
-                                            alt="Interior">
-                                    </picture>
-                                </div>
-                                <div class="swiper-slide">
-                                    <picture>
-                                        <source srcset="assets/images/slider-item1.webp" type="image/webp"><img
-                                            src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy"
-                                            alt="Coffee">
-                                    </picture>
-                                </div>
                                 <div class="swiper-slide">
                                     <picture>
                                         <source srcset="assets/images/slider-item1.webp" type="image/webp"><img
@@ -691,34 +587,6 @@
                                             alt="Interior">
                                     </picture>
                                 </div>
-                                <div class="swiper-slide">
-                                    <picture>
-                                        <source srcset="assets/images/slider-item1.webp" type="image/webp"><img
-                                            src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy"
-                                            alt="Coffee">
-                                    </picture>
-                                </div>
-                                <div class="swiper-slide">
-                                    <picture>
-                                        <source srcset="assets/images/slider-item1.webp" type="image/webp"><img
-                                            src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy"
-                                            alt="Interior">
-                                    </picture>
-                                </div>
-                                <div class="swiper-slide">
-                                    <picture>
-                                        <source srcset="assets/images/slider-item1.webp" type="image/webp"><img
-                                            src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy"
-                                            alt="Coffee">
-                                    </picture>
-                                </div>
-                                <div class="swiper-slide">
-                                    <picture>
-                                        <source srcset="assets/images/slider-item1.webp" type="image/webp"><img
-                                            src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy"
-                                            alt="Interior">
-                                    </picture>
-                                </div>
                             </div>
                             <div class="swiper-pagination"></div>
                         </div>
@@ -754,36 +622,9 @@
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <picture>
-                                        <source srcset="assets/images/slider-item1.webp" type="image/webp"><img
-                                            src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy"
-                                            alt="Interior">
-                                    </picture>
-                                </div>
-                                <div class="swiper-slide">
-                                    <picture>
-                                        <source srcset="assets/images/slider-item1.webp" type="image/webp"><img
-                                            src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy"
-                                            alt="Coffee">
-                                    </picture>
-                                </div>
-                                <div class="swiper-slide">
-                                    <picture>
-                                        <source srcset="assets/images/slider-item1.webp" type="image/webp"><img
-                                            src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy"
-                                            alt="Interior">
-                                    </picture>
-                                </div>
-                                <div class="swiper-slide">
-                                    <picture>
-                                        <source srcset="assets/images/slider-item1.webp" type="image/webp"><img
-                                            src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy"
-                                            alt="Coffee">
-                                    </picture>
-                                </div>
-                                <div class="swiper-slide">
-                                    <picture>
-                                        <source srcset="assets/images/slider-item1.webp" type="image/webp"><img
-                                            src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy"
+                                        <source srcset="assets/images/coffe7.webp" type="image/webp">
+                                        <img
+                                            src="assets/images/coffe7.JPG" width="576" height="383" loading="lazy"
                                             alt="Interior">
                                     </picture>
                                 </div>
@@ -792,9 +633,9 @@
                         </div>
                         <div class="branches__info">
                             <div class="branches__info-top">
-                                <h3>ROASTERS Specialty Coffee <br /> House Al Wasl</h3>
+                                <h3>Roasters Specialty Coffee House Al Wasl</h3>
                                 <div class="branches__info-top--rating">
-                                    <span>4.9</span>
+                                    <span>4.8</span>
                                     <img src="assets/images/rating.svg" width="178" height="22" alt="">
                                 </div>
                             </div>
@@ -802,8 +643,7 @@
                                 <address>
                                     <ul>
                                         <li class="branches__location">
-                                            <a href="https://goo.gl/maps/PHMoGpRmGnjSCjbq7" target="_blank">Villa 484a,
-                                                Al Wasl Road, Jumeirah 2</a>
+                                            <a href="https://maps.app.goo.gl/51ZkzVfro3g4Vu9XA" target="_blank">Villa 484a, Al Wasl Road, Jumeirah 2</a>
                                         </li>
                                         <li class="branches__thime">
                                             <span>Monday to Sunday: 7am–12am</span>
@@ -823,36 +663,8 @@
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <picture>
-                                        <source srcset="assets/images/slider-item1.webp" type="image/webp"><img
-                                            src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy"
-                                            alt="Interior">
-                                    </picture>
-                                </div>
-                                <div class="swiper-slide">
-                                    <picture>
-                                        <source srcset="assets/images/slider-item1.webp" type="image/webp"><img
-                                            src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy"
-                                            alt="Coffee">
-                                    </picture>
-                                </div>
-                                <div class="swiper-slide">
-                                    <picture>
-                                        <source srcset="assets/images/slider-item1.webp" type="image/webp"><img
-                                            src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy"
-                                            alt="Interior">
-                                    </picture>
-                                </div>
-                                <div class="swiper-slide">
-                                    <picture>
-                                        <source srcset="assets/images/slider-item1.webp" type="image/webp"><img
-                                            src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy"
-                                            alt="Coffee">
-                                    </picture>
-                                </div>
-                                <div class="swiper-slide">
-                                    <picture>
-                                        <source srcset="assets/images/slider-item1.webp" type="image/webp"><img
-                                            src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy"
+                                        <source srcset="assets/images/coffe9.webp" type="image/webp"><img
+                                            src="assets/images/coffe9.JPG" width="576" height="383" loading="lazy"
                                             alt="Interior">
                                     </picture>
                                 </div>
@@ -861,7 +673,7 @@
                         </div>
                         <div class="branches__info">
                             <div class="branches__info-top">
-                                <h3>ROASTERS <br /> Palm Jumeirah Mall</h3>
+                                <h3>Roasters Specialty Coffee House Boulevard Downtown</h3>
                                 <div class="branches__info-top--rating">
                                     <span>4.6</span>
                                     <img src="assets/images/rating.svg" width="178" height="22" alt="">
@@ -871,79 +683,11 @@
                                 <address>
                                     <ul>
                                         <li class="branches__location">
-                                            <span>Nakheel mall, 2nd Floor</span>
+                                            <a href="https://maps.app.goo.gl/YTicQEfhvMSVVw946" target="_blank"> Yansoon 1 — Sheikh Mohammed bin Rashid Boulevard </a>
                                         </li>
                                         <li class="branches__thime">
-                                            <span>Monday to Sunday: 8am–11pm</span>
-                                        </li>
-                                        <li class="branches__thime">
-                                            <a href="tel:+971585958110">+971 58 595 8110</a>
-                                        </li>
-                                    </ul>
-                                </address>
-                                <a href="/" class="branches__info-bottom-link">BOOK NOW</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="branches__popup" id="branch-popup-8">
-                        <div class="swiper branch-swiper">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <picture>
-                                        <source srcset="assets/images/slider-item1.webp" type="image/webp"><img
-                                            src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy"
-                                            alt="Interior">
-                                    </picture>
-                                </div>
-                                <div class="swiper-slide">
-                                    <picture>
-                                        <source srcset="assets/images/slider-item1.webp" type="image/webp"><img
-                                            src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy"
-                                            alt="Coffee">
-                                    </picture>
-                                </div>
-                                <div class="swiper-slide">
-                                    <picture>
-                                        <source srcset="assets/images/slider-item1.webp" type="image/webp"><img
-                                            src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy"
-                                            alt="Interior">
-                                    </picture>
-                                </div>
-                                <div class="swiper-slide">
-                                    <picture>
-                                        <source srcset="assets/images/slider-item1.webp" type="image/webp"><img
-                                            src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy"
-                                            alt="Coffee">
-                                    </picture>
-                                </div>
-                                <div class="swiper-slide">
-                                    <picture>
-                                        <source srcset="assets/images/slider-item1.webp" type="image/webp"><img
-                                            src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy"
-                                            alt="Interior">
-                                    </picture>
-                                </div>
-                            </div>
-                            <div class="swiper-pagination"></div>
-                        </div>
-                        <div class="branches__info">
-                            <div class="branches__info-top">
-                                <h3>ROASTERS Specialty Coffee <br /> House Boulevard Downtown</h3>
-                                <div class="branches__info-top--rating">
-                                    <span>4.9</span>
-                                    <img src="assets/images/rating.svg" width="178" height="22" alt="">
-                                </div>
-                            </div>
-                            <div class="branches__info-bottom">
-                                <address>
-                                    <ul>
-                                        <li class="branches__location">
-                                            <a href="https://maps.app.goo.gl/uA89JtynPNf7kh749?g_st=ic"
-                                                target="_blank">Yansoon 1 — Sheikh Mohammed bin Rashid Boulevard</a>
-                                        </li>
-                                        <li class="branches__thime">
-                                            <span>Sunday–Thursday: 7am–12am <br>
+                                            <span>Sunday–Thursday: 7am–12am
+                                                <br>
                                                 Friday–Saturday: 7am–1am
                                             </span>
                                         </li>
@@ -957,37 +701,52 @@
                         </div>
                     </div>
 
-                    <div class="branches__popup" id="branch-popup-9">
+                    <div class="branches__popup" id="branch-popup-8">
                         <div class="swiper branch-swiper">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <picture>
-                                        <source srcset="assets/images/slider-item1.webp" type="image/webp"><img
-                                            src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy"
+                                        <source srcset="assets/images/coffe6.webp" type="image/webp"><img
+                                            src="assets/images/coffe6.JPG" width="576" height="383" loading="lazy"
                                             alt="Interior">
                                     </picture>
                                 </div>
-                                <div class="swiper-slide">
-                                    <picture>
-                                        <source srcset="assets/images/slider-item1.webp" type="image/webp"><img
-                                            src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy"
-                                            alt="Coffee">
-                                    </picture>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                        <div class="branches__info">
+                            <div class="branches__info-top">
+                                <h3>Roasters Specialty Coffee House Dubai Mall</h3>
+                                <div class="branches__info-top--rating">
+                                    <span>4.9</span>
+                                    <img src="assets/images/rating.svg" width="178" height="22" alt="">
                                 </div>
-                                <div class="swiper-slide">
-                                    <picture>
-                                        <source srcset="assets/images/slider-item1.webp" type="image/webp"><img
-                                            src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy"
-                                            alt="Interior">
-                                    </picture>
-                                </div>
-                                <div class="swiper-slide">
-                                    <picture>
-                                        <source srcset="assets/images/slider-item1.webp" type="image/webp"><img
-                                            src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy"
-                                            alt="Coffee">
-                                    </picture>
-                                </div>
+                            </div>
+                            <div class="branches__info-bottom">
+                                <address>
+                                    <ul>
+                                        <li class="branches__location">
+                                            <a href="https://maps.app.goo.gl/BNfLbisvxktYySpS9"
+                                                target="_blank">Dubai mall 1st floor, next to the Aquarium</a>
+                                        </li>
+                                        <li class="branches__thime">
+                                            <span>Sunday–Thursday: 10am–12am <br>
+                                                Friday–Saturday: 10am–1am
+                                            </span>
+                                        </li>
+                                        <li class="branches__thime">
+                                            <a href="tel:+971 58 598 6577">+971 58 598 6577</a>
+                                        </li>
+                                    </ul>
+                                </address>
+                                <a href="/" class="branches__info-bottom-link">BOOK NOW</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="branches__popup" id="branch-popup-9">
+                        <div class="swiper branch-swiper">
+                            <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <picture>
                                         <source srcset="assets/images/slider-item1.webp" type="image/webp"><img
@@ -1032,36 +791,8 @@
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <picture>
-                                        <source srcset="assets/images/slider-item1.webp" type="image/webp"><img
-                                            src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy"
-                                            alt="Interior">
-                                    </picture>
-                                </div>
-                                <div class="swiper-slide">
-                                    <picture>
-                                        <source srcset="assets/images/slider-item1.webp" type="image/webp"><img
-                                            src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy"
-                                            alt="Coffee">
-                                    </picture>
-                                </div>
-                                <div class="swiper-slide">
-                                    <picture>
-                                        <source srcset="assets/images/slider-item1.webp" type="image/webp"><img
-                                            src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy"
-                                            alt="Interior">
-                                    </picture>
-                                </div>
-                                <div class="swiper-slide">
-                                    <picture>
-                                        <source srcset="assets/images/slider-item1.webp" type="image/webp"><img
-                                            src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy"
-                                            alt="Coffee">
-                                    </picture>
-                                </div>
-                                <div class="swiper-slide">
-                                    <picture>
-                                        <source srcset="assets/images/slider-item1.webp" type="image/webp"><img
-                                            src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy"
+                                        <source srcset="assets/images/coffe5.webp" type="image/webp"><img
+                                            src="assets/images/coffe5.jpeg" width="576" height="383" loading="lazy"
                                             alt="Interior">
                                     </picture>
                                 </div>
@@ -1070,9 +801,9 @@
                         </div>
                         <div class="branches__info">
                             <div class="branches__info-top">
-                                <h3>ROASTERS Specialty Coffee<br /> House Creek Harbour</h3>
+                                <h3>Roasters Specialty Coffee House Creek Harbour</h3>
                                 <div class="branches__info-top--rating">
-                                    <span>4.6</span>
+                                    <span>4.9</span>
                                     <img src="assets/images/rating.svg" width="178" height="22" alt="">
                                 </div>
                             </div>
@@ -1080,7 +811,7 @@
                                 <address>
                                     <ul>
                                         <li class="branches__location">
-                                            <a href="https://maps.app.goo.gl/bSf3DU4et1NANhig6?g_st=ic"
+                                            <a href="https://maps.app.goo.gl/QYHtC4MyctP9CGyA7"
                                                 target="_blank">North Promenade, The Grand — Dubai Creek Harbour</a>
                                         </li>
                                         <li class="branches__thime">
@@ -1101,36 +832,8 @@
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <picture>
-                                        <source srcset="assets/images/slider-item1.webp" type="image/webp"><img
-                                            src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy"
-                                            alt="Interior">
-                                    </picture>
-                                </div>
-                                <div class="swiper-slide">
-                                    <picture>
-                                        <source srcset="assets/images/slider-item1.webp" type="image/webp"><img
-                                            src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy"
-                                            alt="Coffee">
-                                    </picture>
-                                </div>
-                                <div class="swiper-slide">
-                                    <picture>
-                                        <source srcset="assets/images/slider-item1.webp" type="image/webp"><img
-                                            src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy"
-                                            alt="Interior">
-                                    </picture>
-                                </div>
-                                <div class="swiper-slide">
-                                    <picture>
-                                        <source srcset="assets/images/slider-item1.webp" type="image/webp"><img
-                                            src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy"
-                                            alt="Coffee">
-                                    </picture>
-                                </div>
-                                <div class="swiper-slide">
-                                    <picture>
-                                        <source srcset="assets/images/slider-item1.webp" type="image/webp"><img
-                                            src="assets/images/slider-item1.jpg" width="576" height="383" loading="lazy"
+                                        <source srcset="assets/images/coffe1.webp" type="image/webp"><img
+                                            src="assets/images/coffe1.JPG" width="576" height="383" loading="lazy"
                                             alt="Interior">
                                     </picture>
                                 </div>
@@ -1139,9 +842,9 @@
                         </div>
                         <div class="branches__info">
                             <div class="branches__info-top">
-                                <h3>ROASTERS <br /> Palm Jumeirah Mall</h3>
+                                <h3>Roasters Specialty Coffee House Sobha Hartland, The terrace residence</h3>
                                 <div class="branches__info-top--rating">
-                                    <span>4.6</span>
+                                    <span>4.2</span>
                                     <img src="assets/images/rating.svg" width="178" height="22" alt="">
                                 </div>
                             </div>
@@ -1149,13 +852,13 @@
                                 <address>
                                     <ul>
                                         <li class="branches__location">
-                                            <span>Nakheel mall, 2nd Floor</span>
+                                            <a href="https://maps.app.goo.gl/9DPrFgmiZGetRSsp9" target="_blank">Shop no - 01 - Nad Al Sheba 1 - Dubai</a>
                                         </li>
                                         <li class="branches__thime">
-                                            <span>Monday to Sunday: 8am–11pm</span>
+                                            <span>Monday–Sunday: 7am–12am</span>
                                         </li>
                                         <li class="branches__thime">
-                                            <a href="tel:+971585958110">+971 58 595 8110</a>
+                                            <a href="tel:+971585592459">+971 58 559 2459</a>
                                         </li>
                                     </ul>
                                 </address>

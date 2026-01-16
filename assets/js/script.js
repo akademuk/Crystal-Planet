@@ -304,6 +304,52 @@ document.addEventListener('DOMContentLoaded', function() {
         },
     });
 });
+
+// Branches Desktop/Mobile Scroll Logic (Arrows)
+document.addEventListener('DOMContentLoaded', () => {
+    const wrapper = document.querySelector('.branches__wrapper');
+    const prevBtn = document.querySelector('.branches-scroll-btn.prev');
+    const nextBtn = document.querySelector('.branches-scroll-btn.next');
+
+    if (wrapper && prevBtn && nextBtn) {
+        
+        // Check visibility and update arrows
+        const updateArrows = () => {
+            // Tolerance of 1px for high-DPI screens calc errors
+            if (wrapper.scrollLeft <= 1) {
+                prevBtn.classList.add('hidden');
+            } else {
+                prevBtn.classList.remove('hidden');
+            }
+
+            if (wrapper.scrollLeft + wrapper.clientWidth >= wrapper.scrollWidth - 1) {
+                nextBtn.classList.add('hidden');
+            } else {
+                nextBtn.classList.remove('hidden');
+            }
+        };
+
+        // Scroll amount: 50% of screen width or fixed amount
+        const scrollAmount = () => wrapper.clientWidth / 2;
+
+        prevBtn.addEventListener('click', () => {
+            wrapper.scrollBy({ left: -scrollAmount(), behavior: 'smooth' });
+        });
+
+        nextBtn.addEventListener('click', () => {
+            wrapper.scrollBy({ left: scrollAmount(), behavior: 'smooth' });
+        });
+
+        // Listen for scroll events to toggle arrows
+        wrapper.addEventListener('scroll', updateArrows);
+        
+        // Initial check
+        updateArrows();
+        // Check on resize too
+        window.addEventListener('resize', updateArrows);
+    }
+});
+
 // Lenis Smooth Scroll
 document.addEventListener('DOMContentLoaded', () => {
     // Check if Lenis is defined
