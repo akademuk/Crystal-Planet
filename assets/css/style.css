@@ -2155,3 +2155,14 @@ a {
     width: 80%;
     margin-left: auto;
 }
+
+@media (max-width: 400px) {
+    .retail-swiper .swiper-slide {
+        width: 100%;
+        height: auto;
+    }
+
+    .retail-swiper-title h3 {
+        font-size: 24px;
+    }
+}
