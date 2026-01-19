@@ -2165,4 +2165,12 @@ a {
     .retail-swiper-title h3 {
         font-size: 24px;
     }
+
+    .retail-swiper-box {
+        padding: 32px 16px;
+    }
+
+    .retail-swiper-title p {
+        text-align: center;
+    }
 }
