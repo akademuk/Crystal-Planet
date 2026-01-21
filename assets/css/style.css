@@ -1232,6 +1232,8 @@ a {
     padding: 30px 0;
     width: 100%;
     border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
     background: linear-gradient(0deg, #FFF 0%, #FFF 100%);
     box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.25);
     color: #000;
@@ -1537,7 +1539,110 @@ a {
     height: 500px;
 }
 
+.article-page {
+    padding: 128px 32px;
+    position: relative;
+    overflow: hidden;
+}
+
+.article-page-box {
+    border-radius: 5px;
+    background: linear-gradient(0deg, #FFF 0%, #FFF 100%);
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.25);
+    max-height: 723px;
+    height: 100%;
+    overflow: hidden;
+    padding: 32px 52px;
+    display: flex;
+    flex-direction: column;
+}
+
+.article-page-scroll {
+    overflow-y: auto;
+    padding-right: 32px;
+    flex: 1;
+    min-height: 0;
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
+}
+
+.article-page-image {
+    position: relative;
+    width: 100%;
+    height: 390px;
+    margin-bottom: 32px;
+}
+
+.article-page-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.article-page-content {
+    position: absolute;
+    border-radius: 11px;
+    background: rgba(0, 0, 0, 0.50);
+    backdrop-filter: blur(8px);
+    max-width: 396px;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+}
+
+.article-page-content h1 {
+    color: #FFF;
+    font-family: "Times New Roman";
+    font-size: 55px;
+    font-weight: 700;
+    line-height: 100%; 
+}
+
+.article-page-content p {
+    color: #FFF;
+    font-family: "Times New Roman";
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 100%;
+}
+
+.article-page-text {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.article-page-text h2 {
+    color: #1E1E1E;
+    font-family: "Times New Roman";
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 100%; 
+}
+
+.article-page-text p {
+    color: #1E1E1E;
+    font-family: "Times New Roman";
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 100%;
+}
+
 @media (max-width: 1280px) {
+
+    .article-page-box {
+        padding: 32px 16px 32px 32px;
+    }
+
+    .article-page-scroll {
+        padding-right: 16px;
+    }
+    
 
     .header__burger {
         display: flex;
@@ -1962,12 +2067,39 @@ a {
     .branches__info {
         gap: 24px;
     }
+
+    .news-page {
+        padding-top: 128px;
+    }
 }
 
 @media (max-width: 768px) {
     .footer__content {
         flex-direction: column;
         gap: 40px;
+    }
+
+    .article-page-content {
+        max-width: calc(100% - 40px);
+        top: auto;
+        bottom: 24px;
+        transform: none;
+    }
+
+    .article-page-content p {
+        font-size: 16px;
+    }
+
+    .article-page-text h2 {
+        font-size: 24px;
+    }
+
+    .article-page-description {
+        font-size: 16px;
+    }
+
+    .article-page-content h1 {
+        font-size: 24px;
     }
 }
 

@@ -398,3 +398,51 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
+// News Load More Logic
+document.addEventListener('DOMContentLoaded', () => {
+    const newsItems = document.querySelectorAll('.news-item');
+    const viewBtn = document.getElementById('view');
+    const itemsPerPage = 6;
+    let itemsToShow = 3; 
+
+    // Initially hide items beyond the limit (6)
+    if (newsItems.length > 0) {
+        newsItems.forEach((item, index) => {
+            if (index >= itemsPerPage) {
+                item.style.display = 'none';
+            }
+        });
+
+        // Loop through to check if we need to show the button initially
+        // Note: Using a specific selector or just checking display property
+        const hiddenCount = Array.from(newsItems).filter(item => item.style.display === 'none').length;
+        if (hiddenCount === 0 && viewBtn) {
+           viewBtn.style.display = 'none';
+        }
+    }
+
+    if (viewBtn) {
+        viewBtn.addEventListener('click', () => {
+             // Find currently hidden items
+             const hiddenItems = Array.from(document.querySelectorAll('.news-item')).filter(item => item.style.display === 'none');
+             
+             if (hiddenItems.length > 0) {
+                 let count = 0;
+                 // Show next 3 items
+                 for (let i = 0; i < hiddenItems.length; i++) {
+                     if (count < itemsToShow) {
+                         hiddenItems[i].style.display = ''; // Clear inline style to revert to CSS default (block/flex)
+                         count++;
+                     }
+                 }
+                 
+                 // Re-check hidden items
+                 const remainingHidden = Array.from(document.querySelectorAll('.news-item')).filter(item => item.style.display === 'none');
+                 if (remainingHidden.length === 0) {
+                     viewBtn.style.display = 'none';
+                 }
+             }
+        });
+    }
+});
