@@ -1562,7 +1562,6 @@ a {
     padding-right: 32px;
     flex: 1;
     min-height: 0;
-    overscroll-behavior: contain;
     -webkit-overflow-scrolling: touch;
 }
 
