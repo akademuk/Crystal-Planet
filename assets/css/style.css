@@ -1598,7 +1598,7 @@ a {
     font-family: "Times New Roman";
     font-size: 55px;
     font-weight: 700;
-    line-height: 100%; 
+    line-height: 100%;
 }
 
 .article-page-content p {
@@ -1620,7 +1620,7 @@ a {
     font-family: "Times New Roman";
     font-size: 22px;
     font-weight: 700;
-    line-height: 100%; 
+    line-height: 100%;
 }
 
 .article-page-text p {
@@ -1646,7 +1646,8 @@ a {
     font-size: 111px;
     margin-bottom: 22px;
     font-weight: 700;
-    line-height: 100%; /* 111px */
+    line-height: 100%;
+    /* 111px */
 }
 
 .page404-page-scroll p {
@@ -1654,7 +1655,8 @@ a {
     text-align: center;
     font-size: 22px;
     font-weight: 400;
-    line-height: 100%; /* 22px */
+    line-height: 100%;
+    /* 22px */
     margin-bottom: 114px;
 }
 
@@ -1724,36 +1726,59 @@ a {
     object-position: center top;
 }
 
-    .menu-content-image-des {
+.menu-content-image-des {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.menu-content-image-mob {
+    display: none;
+}
+
+.contact-list {
+    display: flex;
+    gap: 16px;
+}
+
+.contact-list-item {
+    display: flex;
+}
+
+.proud-content-description b {
+    font-weight: 700;
+}
+
+.thank-you-page h1 {
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.thank-you-page h2 {
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 64px;
+}
+
+@media (max-width: 1280px) {
+
+    .menu-content-image-mob {
         display: block;
         width: 100%;
         height: 100%;
     }
 
-    .menu-content-image-mob {
-        display: none;
+    .thank-you-page-image {
+        width: 90px;
+        height: 90px;
     }
 
-    .contact-list {
-        display: flex;
-        gap: 16px;
-    }
-
-    .contact-list-item {
-        display: flex;
-    }
-
-    .proud-content-description b {
-        font-weight: 700;
-    }
-
-@media (max-width: 1280px) {
-
-    .menu-content-image-mob {
-    display: block;
-    width: 100%;
+    .thank-you-page-image img {
+        width: 100%;
         height: 100%;
-}
+        object-fit: contain;
+    }
 
     .menu-content-image-des {
         display: none;
@@ -2050,7 +2075,8 @@ a {
         font-size: 16px;
     }
 
-    .contact address p, .contact address a {
+    .contact address p,
+    .contact address a {
         font-size: 24px;
     }
 
@@ -2234,10 +2260,10 @@ a {
         transform: none;
     }
 
-        .page404-box {
+    .page404-box {
         min-height: auto;
     }
-    
+
 
     .article-page-content p {
         font-size: 16px;
@@ -2275,6 +2301,24 @@ a {
     .coffeeraves-page {
         padding-top: 128px;
     }
+
+    .page404-page-scroll h1 {
+        font-size: 2rem;
+    }
+
+    .thank-you-page h2 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .page404-box.thank-you-page {
+        padding: 128px 32px;
+    }
+}
+
+.article-page-link {
+    transition: all 0.3s;
+    cursor: pointer;
 }
 
 /* --- Hover Effects --- */
